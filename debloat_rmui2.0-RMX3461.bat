@@ -103,7 +103,7 @@ adb shell pm uninstall -k --user 0 com.coloros.video
 echo Uninstalling Youtube
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 
-echo Uninstalling realmw Share
+echo Uninstalling realme Share
 adb shell pm uninstall -k --user 0 com.coloros.oshare
 
 echo Done
