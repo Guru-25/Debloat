@@ -1,20 +1,41 @@
 @echo off
 echo Running realme 9 5G Speed Edition debloat script
 
+echo Disabling Browser
+adb shell pm disable-user --user 0 com.heytap.browser
+
+echo Disabling HeySynergy
+adb shell pm disable-user --user 0 com.heytap.synergy
+
+echo Disabling HeyTap Cloud
+adb shell pm disable-user --user 0 com.heytap.cloud
+
+echo Disabling Lock Screen Magazine
+adb shell pm disable-user --user 0 com.heytap.pictorial
+
+echo Disabling Music
+adb shell pm disable-user --user 0 com.heytap.music
+
+echo Disabling My realme
+adb shell pm disable-user --user 0 com.heytap.usercenter
+
+echo Disabling Theme Store
+adb shell pm disable-user --user 0 com.heytap.themestore
+
 echo Uninstalling App Enhancement Services
 adb shell pm uninstall -k --user 0 com.coloros.gamespace
 
 echo Uninstalling Assistant
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 
-echo Uninstalling Browser
-adb shell pm uninstall -k --user 0 com.heytap.browser
-
 echo Uninstalling Calendar
 adb shell pm uninstall -k --user 0 com.google.android.calendar
 
 echo Uninstalling Chrome
 adb shell pm uninstall -k --user 0 com.android.chrome
+
+echo Uninstalling Compass
+adb shell pm uninstall -k --user 0 com.coloros.compass2
 
 echo Uninstalling Contacts
 adb shell pm uninstall -k --user 0 com.google.android.contacts
@@ -52,12 +73,6 @@ adb shell pm uninstall -k --user 0 com.google.android.syncadapters.contacts
 echo Uninstalling Google Pay
 adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.paisa.user
 
-echo Uninstalling HeySynergy
-adb shell pm uninstall -k --user 0 com.heytap.synergy
-
-echo Uninstalling HeyTap Cloud
-adb shell pm uninstall -k --user 0 com.heytap.cloud
-
 echo Uninstalling Hot Apps
 adb shell pm uninstall -k --user 0 com.opos.cs
 
@@ -66,9 +81,6 @@ adb shell pm uninstall -k --user 0 com.google.android.keep
 
 echo Uninstalling Lens
 adb shell pm uninstall -k --user 0 com.google.ar.lens
-
-echo Uninstalling Lock Screen Magazine
-adb shell pm uninstall -k --user 0 com.heytap.pictorial
 
 echo Uninstalling Maps
 adb shell pm uninstall -k --user 0 com.google.android.apps.maps
@@ -85,14 +97,11 @@ adb shell pm uninstall -k --user 0 com.facebook.appmanager
 echo Uninstalling Meta Services
 adb shell pm uninstall -k --user 0 com.facebook.services
 
-echo Uninstalling Music
-adb shell pm uninstall -k --user 0 com.heytap.music
-
-echo Uninstalling My realme
-adb shell pm uninstall -k --user 0 com.heytap.usercenter
-
 echo Uninstalling Phone
 adb shell pm uninstall -k --user 0 com.google.android.dialer
+
+echo Uninstalling Phone Manager
+adb shell pm uninstall -k --user 0 com.coloros.phonemanager
 
 echo Uninstalling Photos
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
