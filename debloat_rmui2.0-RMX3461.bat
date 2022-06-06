@@ -4,17 +4,11 @@ echo Running realme 9 5G Speed Edition debloat script
 echo Disabling Browser
 adb shell pm disable-user --user 0 com.heytap.browser
 
-echo Disabling HeySynergy
-adb shell pm disable-user --user 0 com.heytap.synergy
-
 echo Disabling HeyTap Cloud
 adb shell pm disable-user --user 0 com.heytap.cloud
 
 echo Disabling Lock Screen Magazine
 adb shell pm disable-user --user 0 com.heytap.pictorial
-
-echo Disabling Music
-adb shell pm disable-user --user 0 com.heytap.music
 
 echo Disabling My realme
 adb shell pm disable-user --user 0 com.heytap.usercenter
@@ -22,14 +16,23 @@ adb shell pm disable-user --user 0 com.heytap.usercenter
 echo Disabling Theme Store
 adb shell pm disable-user --user 0 com.heytap.themestore
 
-echo Uninstalling App Enhancement Services
-adb shell pm uninstall -k --user 0 com.coloros.gamespace
+echo Uninstalling Android Accessibility Suite
+adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
+
+echo Uninstalling Android Auto
+adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 
 echo Uninstalling Assistant
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 
+echo Uninstalling atlasService
+adb shell pm uninstall -k --user 0 com.oplus.atlas
+
 echo Uninstalling Calendar
 adb shell pm uninstall -k --user 0 com.google.android.calendar
+
+echo Uninstalling Carrier Services
+adb shell pm uninstall -k --user 0 com.google.android.ims
 
 echo Uninstalling Chrome
 adb shell pm uninstall -k --user 0 com.android.chrome
@@ -39,6 +42,9 @@ adb shell pm uninstall -k --user 0 com.coloros.compass2
 
 echo Uninstalling Contacts
 adb shell pm uninstall -k --user 0 com.google.android.contacts
+
+echo Uninstalling Data Restore Tool
+adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
 echo Uninstalling Digital Wellbeing
 adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
@@ -67,11 +73,11 @@ adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 echo Uninstalling Google Assistant
 adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
 
-echo Uninstalling Google Contacts Sync
-adb shell pm uninstall -k --user 0 com.google.android.syncadapters.contacts
-
 echo Uninstalling Google Pay
 adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.paisa.user
+
+echo Uninstalling HeySynergy
+adb shell pm uninstall -k --user 0 com.heytap.synergy
 
 echo Uninstalling Hot Apps
 adb shell pm uninstall -k --user 0 com.opos.cs
@@ -97,6 +103,12 @@ adb shell pm uninstall -k --user 0 com.facebook.appmanager
 echo Uninstalling Meta Services
 adb shell pm uninstall -k --user 0 com.facebook.services
 
+echo Uninstalling Music
+adb shell pm uninstall -k --user 0 com.heytap.music
+
+echo Uninstalling Payment Protection
+adb shell pm uninstall -k --user 0 com.coloros.securepay
+
 echo Uninstalling Phone
 adb shell pm uninstall -k --user 0 com.google.android.dialer
 
@@ -106,13 +118,28 @@ adb shell pm uninstall -k --user 0 com.coloros.phonemanager
 echo Uninstalling Photos
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 
+echo Uninstalling Private Safe
+adb shell pm uninstall -k --user 0 com.coloros.encryption
+
+echo Uninstalling Secure Keyboard
+adb shell pm uninstall -k --user 0 com.coloros.securitykeyboard
+
+echo Uninstalling Secure Payment
+adb shell pm uninstall -k --user 0 com.nearme.atlas
+
+echo Uninstalling Sound Amplifier
+adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifier
+
+echo Uninstalling Speech Services by Google
+adb shell pm uninstall -k --user 0 com.google.android.tts
+
+echo Uninstalling User Experience Program
+adb shell pm uninstall -k --user 0 com.nearme.statistics.rom
+
 echo Uninstalling Video (System)
 adb shell pm uninstall -k --user 0 com.coloros.video
 
 echo Uninstalling Youtube
 adb shell pm uninstall -k --user 0 com.google.android.youtube
-
-echo Uninstalling realme Share
-adb shell pm uninstall -k --user 0 com.coloros.oshare
 
 echo Done
