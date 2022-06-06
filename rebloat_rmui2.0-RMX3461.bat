@@ -1,11 +1,8 @@
 @echo off
-echo Running realme 9 5G Speed Edition debloat script
+echo Running realme 9 5G Speed Edition redebloat script
 
 echo Enabling Browser
 adb shell pm enable --user 0 com.heytap.browser
-
-echo Enabling HeySynergy
-adb shell pm enable --user 0 com.heytap.synergy
 
 echo Enabling HeyTap Cloud
 adb shell pm enable --user 0 com.heytap.cloud
@@ -13,23 +10,29 @@ adb shell pm enable --user 0 com.heytap.cloud
 echo Enabling Lock Screen Magazine
 adb shell pm enable --user 0 com.heytap.pictorial
 
-echo Enabling Music
-adb shell pm enable --user 0 com.heytap.music
-
 echo Enabling My realme
 adb shell pm enable --user 0 com.heytap.usercenter
 
 echo Enabling Theme Store
 adb shell pm enable --user 0 com.heytap.themestore
 
-echo Reinstalling App Enhancement Services
-adb shell pm install-existing --user 0 com.coloros.gamespace
+echo Reinstalling Android Accessibility Suite
+adb shell pm install-existing --user 0 com.google.android.marvin.talkback
+
+echo Reinstalling Android Auto
+adb shell pm install-existing --user 0 com.google.android.projection.gearhead
 
 echo Reinstalling Assistant
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 
+echo Reinstalling atlasService
+adb shell pm install-existing --user 0 com.oplus.atlas
+
 echo Reinstalling Calendar
 adb shell pm install-existing --user 0 com.google.android.calendar
+
+echo Reinstalling Carrier Services
+adb shell pm install-existing --user 0 com.google.android.ims
 
 echo Reinstalling Chrome
 adb shell pm install-existing --user 0 com.android.chrome
@@ -39,6 +42,9 @@ adb shell pm install-existing --user 0 com.coloros.compass2
 
 echo Reinstalling Contacts
 adb shell pm install-existing --user 0 com.google.android.contacts
+
+echo Reinstalling Data Restore Tool
+adb shell pm install-existing --user 0 com.google.android.apps.restore
 
 echo Reinstalling Digital Wellbeing
 adb shell pm install-existing --user 0 com.google.android.apps.wellbeing
@@ -67,11 +73,11 @@ adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 echo Reinstalling Google Assistant
 adb shell pm install-existing --user 0 com.android.hotwordenrollment.okgoogle
 
-echo Reinstalling Google Contacts Sync
-adb shell pm install-existing --user 0 com.google.android.syncadapters.contacts
-
 echo Reinstalling Google Pay
 adb shell pm install-existing --user 0 com.google.android.apps.nbu.paisa.user
+
+echo Reinstalling HeySynergy
+adb shell pm install-existing --user 0 com.heytap.synergy
 
 echo Reinstalling Hot Apps
 adb shell pm install-existing --user 0 com.opos.cs
@@ -97,6 +103,12 @@ adb shell pm install-existing --user 0 com.facebook.appmanager
 echo Reinstalling Meta Services
 adb shell pm install-existing --user 0 com.facebook.services
 
+echo Reinstalling Music
+adb shell pm install-existing --user 0 com.heytap.music
+
+echo Reinstalling Payment Protection
+adb shell pm install-existing --user 0 com.coloros.securepay
+
 echo Reinstalling Phone
 adb shell pm install-existing --user 0 com.google.android.dialer
 
@@ -106,13 +118,28 @@ adb shell pm install-existing --user 0 com.coloros.phonemanager
 echo Reinstalling Photos
 adb shell pm install-existing --user 0 com.google.android.apps.photos
 
+echo Reinstalling Private Safe
+adb shell pm install-existing --user 0 com.coloros.encryption
+
+echo Reinstalling Secure Keyboard
+adb shell pm install-existing --user 0 com.coloros.securitykeyboard
+
+echo Reinstalling Secure Payment
+adb shell pm install-existing --user 0 com.nearme.atlas
+
+echo Reinstalling Sound Amplifier
+adb shell pm install-existing --user 0 com.google.android.accessibility.soundamplifier
+
+echo Reinstalling Speech Services by Google
+adb shell pm install-existing --user 0 com.google.android.tts
+
+echo Reinstalling User Experience Program
+adb shell pm install-existing --user 0 com.nearme.statistics.rom
+
 echo Reinstalling Video (System)
 adb shell pm install-existing --user 0 com.coloros.video
 
 echo Reinstalling Youtube
 adb shell pm install-existing --user 0 com.google.android.youtube
-
-echo Reinstalling realme Share
-adb shell pm install-existing --user 0 com.coloros.oshare
 
 echo Done
