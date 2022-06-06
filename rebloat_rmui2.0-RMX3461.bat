@@ -143,3 +143,5 @@ echo Reinstalling Youtube
 adb shell pm install-existing --user 0 com.google.android.youtube
 
 echo Done
+
+pause
