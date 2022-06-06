@@ -8,3 +8,7 @@ Debloat Scripts for Realme UI 2.0
 adb shell pm list users
 ```
 change user number accordingly
+
+-----
+
+### NOTE: REMEMBER TO REDEBLOAT BEFORE ANY SYSTEM/OS UPGRADE
