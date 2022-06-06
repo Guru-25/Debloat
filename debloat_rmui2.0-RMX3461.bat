@@ -143,3 +143,5 @@ echo Uninstalling Youtube
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 
 echo Done
+
+pause
