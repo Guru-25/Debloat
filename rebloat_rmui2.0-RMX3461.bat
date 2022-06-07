@@ -28,6 +28,9 @@ adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 echo Reinstalling atlasService
 adb shell pm install-existing --user 0 com.oplus.atlas
 
+echo Reinstalling Calculator
+adb shell pm install-existing --user 0 com.coloros.calculator
+
 echo Reinstalling Calendar
 adb shell pm install-existing --user 0 com.google.android.calendar
 
@@ -39,9 +42,6 @@ adb shell pm install-existing --user 0 com.android.chrome
 
 echo Reinstalling Compass
 adb shell pm install-existing --user 0 com.coloros.compass2
-
-echo Reinstalling Contacts
-adb shell pm install-existing --user 0 com.google.android.contacts
 
 echo Reinstalling Data Restore Tool
 adb shell pm install-existing --user 0 com.google.android.apps.restore
