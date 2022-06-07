@@ -28,6 +28,9 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 echo Uninstalling atlasService
 adb shell pm uninstall -k --user 0 com.oplus.atlas
 
+echo Uninstalling Calculator
+adb shell pm uninstall -k --user 0 com.coloros.calculator
+
 echo Uninstalling Calendar
 adb shell pm uninstall -k --user 0 com.google.android.calendar
 
@@ -39,9 +42,6 @@ adb shell pm uninstall -k --user 0 com.android.chrome
 
 echo Uninstalling Compass
 adb shell pm uninstall -k --user 0 com.coloros.compass2
-
-echo Uninstalling Contacts
-adb shell pm uninstall -k --user 0 com.google.android.contacts
 
 echo Uninstalling Data Restore Tool
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
