@@ -126,6 +126,9 @@ adb shell pm install-existing --user 0 com.coloros.securitykeyboard
 echo "Reinstalling Secure Payment"
 adb shell pm install-existing --user 0 com.nearme.atlas
 
+echo "Reinstalling SecurityAnalysis"
+adb shell pm install-existing --user 0 com.realme.securitycheck
+
 echo "Reinstalling SIM card apps"
 adb shell pm install-existing --user 0 com.android.stk
 
