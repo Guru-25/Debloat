@@ -126,6 +126,9 @@ adb shell pm uninstall -k --user 0 com.coloros.securitykeyboard
 echo "Uninstalling Secure Payment"
 adb shell pm uninstall -k --user 0 com.nearme.atlas
 
+echo "Uninstalling SecurityAnalysis"
+adb shell pm uninstall -k --user 0 com.realme.securitycheck
+
 echo "Uninstalling SIM card apps"
 adb shell pm uninstall -k --user 0 com.android.stk
 
