@@ -21,6 +21,9 @@ adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
 echo "Uninstalling Android Auto"
 adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 
+echo "Uninstalling App Enhancement Services"
+adb shell pm uninstall -k --user 0 com.coloros.gamespace
+
 echo "Uninstalling Assistant"
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 
