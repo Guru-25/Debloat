@@ -21,6 +21,9 @@ adb shell pm install-existing --user 0 com.google.android.marvin.talkback
 echo "Reinstalling Android Auto"
 adb shell pm install-existing --user 0 com.google.android.projection.gearhead
 
+echo "Reinstalling App Enhancement Services"
+adb shell pm install-existing --user 0 com.coloros.gamespace
+
 echo "Reinstalling Assistant"
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 
