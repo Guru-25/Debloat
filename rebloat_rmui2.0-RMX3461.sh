@@ -30,6 +30,9 @@ adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
 
+echo "Reinstalling Bookmark Provider"
+adb shell pm install-existing --user 0 com.android.bookmarkprovider
+
 echo "Reinstalling Calculator"
 adb shell pm install-existing --user 0 com.coloros.calculator
 
@@ -92,6 +95,9 @@ adb shell pm install-existing --user 0 com.google.ar.lens
 
 echo "Reinstalling Maps"
 adb shell pm install-existing --user 0 com.google.android.apps.maps
+
+echo "Reinstalling Market Feedback Agent"
+adb shell pm install-existing --user 0 com.google.android.feedback
 
 echo "Reinstalling Messages"
 adb shell pm install-existing --user 0 com.google.android.apps.messaging
