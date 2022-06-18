@@ -30,6 +30,9 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
 
+echo "Uninstalling Bookmark Provider"
+adb shell pm uninstall -k --user 0 com.android.bookmarkprovider
+
 echo "Uninstalling Calculator"
 adb shell pm uninstall -k --user 0 com.coloros.calculator
 
@@ -92,6 +95,9 @@ adb shell pm uninstall -k --user 0 com.google.ar.lens
 
 echo "Uninstalling Maps"
 adb shell pm uninstall -k --user 0 com.google.android.apps.maps
+
+echo "Uninstalling Market Feedback Agent"
+adb shell pm uninstall -k --user 0 com.google.android.feedback
 
 echo "Uninstalling Messages"
 adb shell pm uninstall -k --user 0 com.google.android.apps.messaging
