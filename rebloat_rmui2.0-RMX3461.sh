@@ -108,6 +108,9 @@ adb shell pm install-existing --user 0 com.facebook.services
 echo "Reinstalling Music"
 adb shell pm install-existing --user 0 com.heytap.music
 
+echo "Reinstalling ORoaming"
+adb shell pm install-existing --user 0 com.redteamobile.roaming
+
 echo "Reinstalling Payment Protection"
 adb shell pm install-existing --user 0 com.coloros.securepay
 
