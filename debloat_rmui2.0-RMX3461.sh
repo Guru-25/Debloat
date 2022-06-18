@@ -108,6 +108,9 @@ adb shell pm uninstall -k --user 0 com.facebook.services
 echo "Uninstalling Music"
 adb shell pm uninstall -k --user 0 com.heytap.music
 
+echo "Uninstalling ORoaming"
+adb shell pm uninstall -k --user 0 com.redteamobile.roaming
+
 echo "Uninstalling Payment Protection"
 adb shell pm uninstall -k --user 0 com.coloros.securepay
 
