@@ -12,6 +12,12 @@ adb shell pm enable --user 0 com.heytap.pictorial
 echo "Enabling My realme"
 adb shell pm enable --user 0 com.heytap.usercenter
 
+echo "Enabling OpenID"
+adb shell pm enable --user 0 com.heytap.openid
+
+echo "Enabling System Messages"
+adb shell pm enable --user 0 com.heytap.mcs
+
 echo "Enabling Theme Store"
 adb shell pm enable --user 0 com.heytap.themestore
 
@@ -21,11 +27,20 @@ adb shell pm install-existing --user 0 com.google.android.marvin.talkback
 echo "Reinstalling Android Auto"
 adb shell pm install-existing --user 0 com.google.android.projection.gearhead
 
-echo "Reinstalling App Enhancement Services"
+echo "Reinstalling Aod"
+adb shell pm install-existing --user 0 com.oplus.aod
+
+echo "Reinstalling App cloner"
+adb shell pm install-existing --user 0 com.coloros.oppomultiapp
+
+echo "Reinstalling APP Enhancement Services"
 adb shell pm install-existing --user 0 com.coloros.gamespace
 
 echo "Reinstalling Assistant"
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
+
+echo "Reinstalling Athena"
+adb shell pm install-existing --user 0 com.coloros.athena
 
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
@@ -90,6 +105,9 @@ adb shell pm install-existing --user 0 com.google.android.keep
 echo "Reinstalling Lens"
 adb shell pm install-existing --user 0 com.google.ar.lens
 
+echo "Reinstalling MBN Test"
+adb shell pm install-existing --user 0 com.qualcomm.qti.modemtestmode
+
 echo "Reinstalling Maps"
 adb shell pm install-existing --user 0 com.google.android.apps.maps
 
@@ -110,6 +128,9 @@ adb shell pm install-existing --user 0 com.facebook.services
 
 echo "Reinstalling Music"
 adb shell pm install-existing --user 0 com.heytap.music
+
+echo "Reinstalling OplusLFEHer"
+adb shell pm install-existing --user 0 com.oppo.lfeh
 
 echo "Reinstalling ORoaming"
 adb shell pm install-existing --user 0 com.redteamobile.roaming
