@@ -12,6 +12,12 @@ adb shell pm disable-user --user 0 com.heytap.pictorial
 echo "Disabling My realme"
 adb shell pm disable-user --user 0 com.heytap.usercenter
 
+echo "Disabling OpenID"
+adb shell pm disable-user --user 0 com.heytap.openid
+
+echo "Disabling System Messages"
+adb shell pm disable-user --user 0 disable com.heytap.mcs
+
 echo "Disabling Theme Store"
 adb shell pm disable-user --user 0 com.heytap.themestore
 
@@ -21,11 +27,20 @@ adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
 echo "Uninstalling Android Auto"
 adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 
-echo "Uninstalling App Enhancement Services"
+echo "Uninstalling Aod"
+adb shell pm uninstall -k --user 0 com.oplus.aod
+
+echo "Uninstalling App cloner"
+adb shell pm uninstall -k --user 0 com.coloros.oppomultiapp
+
+echo "Uninstalling APP Enhancement Services"
 adb shell pm uninstall -k --user 0 com.coloros.gamespace
 
 echo "Uninstalling Assistant"
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
+
+echo "Uninstalling Athena"
+adb shell pm uninstall -k --user 0 com.coloros.athena
 
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
@@ -90,6 +105,9 @@ adb shell pm uninstall -k --user 0 com.google.android.keep
 echo "Uninstalling Lens"
 adb shell pm uninstall -k --user 0 com.google.ar.lens
 
+echo "Uninstalling MBN Test"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.modemtestmode
+
 echo "Uninstalling Maps"
 adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 
@@ -110,6 +128,9 @@ adb shell pm uninstall -k --user 0 com.facebook.services
 
 echo "Uninstalling Music"
 adb shell pm uninstall -k --user 0 com.heytap.music
+
+echo "Uninstalling OplusLFEHer"
+adb shell pm uninstall -k --user 0 com.oppo.lfeh
 
 echo "Uninstalling ORoaming"
 adb shell pm uninstall -k --user 0 com.redteamobile.roaming
