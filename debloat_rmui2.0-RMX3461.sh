@@ -16,7 +16,7 @@ echo "Disabling OpenID"
 adb shell pm disable-user --user 0 com.heytap.openid
 
 echo "Disabling System Messages"
-adb shell pm disable-user --user 0 disable com.heytap.mcs
+adb shell pm disable-user --user 0 com.heytap.mcs
 
 echo "Disabling Theme Store"
 adb shell pm disable-user --user 0 com.heytap.themestore
@@ -38,9 +38,6 @@ adb shell pm uninstall -k --user 0 com.coloros.gamespace
 
 echo "Uninstalling Assistant"
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
-
-echo "Uninstalling Athena"
-adb shell pm uninstall -k --user 0 com.coloros.athena
 
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
