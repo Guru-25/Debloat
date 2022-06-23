@@ -39,9 +39,6 @@ adb shell pm install-existing --user 0 com.coloros.gamespace
 echo "Reinstalling Assistant"
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 
-echo "Reinstalling Athena"
-adb shell pm install-existing --user 0 com.coloros.athena
-
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
 
