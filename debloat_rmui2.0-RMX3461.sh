@@ -45,6 +45,9 @@ adb shell pm uninstall -k --user 0 com.oplus.atlas
 echo "Uninstalling Bookmark Provider"
 adb shell pm uninstall -k --user 0 com.android.bookmarkprovider
 
+echo "Uninstalling Calculator"
+adb shell pm uninstall -k --user 0 com.coloros.calculator
+
 echo "Uninstalling Calendar"
 adb shell pm uninstall -k --user 0 com.google.android.calendar
 
