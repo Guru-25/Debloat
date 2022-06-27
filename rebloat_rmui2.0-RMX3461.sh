@@ -45,6 +45,9 @@ adb shell pm install-existing --user 0 com.oplus.atlas
 echo "Reinstalling Bookmark Provider"
 adb shell pm install-existing --user 0 com.android.bookmarkprovider
 
+echo "Reinstalling Calculator"
+adb shell pm install-existing --user 0 com.coloros.calculator
+
 echo "Reinstalling Calendar"
 adb shell pm install-existing --user 0 com.google.android.calendar
 
