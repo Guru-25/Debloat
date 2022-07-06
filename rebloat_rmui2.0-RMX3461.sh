@@ -1,4 +1,4 @@
-echo "Running realme 9 5G Speed Edition rebloat script"
+echo "Running RMX3461 rebloat script"
 
 echo "Enabling Browser"
 adb shell pm enable --user 0 com.heytap.browser
@@ -36,8 +36,14 @@ adb shell pm install-existing --user 0 com.coloros.oppomultiapp
 echo "Reinstalling APP Enhancement Services"
 adb shell pm install-existing --user 0 com.coloros.gamespace
 
+echo "Reinstalling ARCore"
+adb shell pm install-existing --user 0 com.google.ar.core
+
 echo "Reinstalling Assistant"
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
+
+echo "Reinstalling Athena"
+adb shell pm install-existing --user 0 com.coloros.athena
 
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
@@ -60,11 +66,26 @@ adb shell pm install-existing --user 0 com.android.chrome
 echo "Reinstalling Compass"
 adb shell pm install-existing --user 0 com.coloros.compass2
 
+echo "Reinstalling ConfigUpdater"
+adb shell pm install-existing --user 0 com.google.android.configupdater
+
+echo "Reinstalling CrashBox"
+adb shell pm install-existing --user 0 com.oplus.crashbox
+
 echo "Reinstalling Data Restore Tool"
 adb shell pm install-existing --user 0 com.google.android.apps.restore
 
+echo "Reinstalling DeepThinker"
+adb shell pm install-existing --user 0 com.oplus.deepthinker
+
 echo "Reinstalling Digital Wellbeing"
 adb shell pm install-existing --user 0 com.google.android.apps.wellbeing
+
+echo "Reinstalling Downloads"
+adb shell pm install-existing --user 0 com.coloros.providers.downloads.ui
+
+echo "Reinstalling Feedback"
+adb shell pm install-existing --user 0 com.coloros.logkit 
 
 echo "Reinstalling File Manager"
 adb shell pm install-existing --user 0 com.coloros.filemanager
@@ -89,6 +110,9 @@ adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 
 echo "Reinstalling Google Assistant"
 adb shell pm install-existing --user 0 com.android.hotwordenrollment.okgoogle
+
+echo "Reinstalling Google Location History"
+adb shell pm install-existing --user 0 com.google.android.gms.location.history
 
 echo "Reinstalling Google Pay"
 adb shell pm install-existing --user 0 com.google.android.apps.nbu.paisa.user
@@ -129,6 +153,21 @@ adb shell pm install-existing --user 0 com.facebook.services
 echo "Reinstalling Music"
 adb shell pm install-existing --user 0 com.heytap.music
 
+echo "Reinstalling Network Health Service"
+adb shell pm install-existing --user 0 com.oppo.nhs
+
+echo "Reinstalling OBrain"
+adb shell pm install-existing --user 0 com.oplus.obrain
+
+echo "Reinstalling OIDT Service"
+adb shell pm install-existing --user 0 com.oplus.postmanservice
+
+echo "Reinstalling OneTrace"
+adb shell pm install-existing --user 0 com.oplus.onetrace
+
+echo "Reinstalling OpenCapabilityService"
+adb shell pm install-existing --user 0 com.coloros.ocs.opencapabilityservice
+
 echo "Reinstalling OplusLFEHer"
 adb shell pm install-existing --user 0 com.oppo.lfeh
 
@@ -150,6 +189,12 @@ adb shell pm install-existing --user 0 com.google.android.apps.photos
 echo "Reinstalling Private Safe"
 adb shell pm install-existing --user 0 com.coloros.encryption
 
+echo "Reinstalling QDCM-FF"
+adb shell pm install-existing --user 0 com.qti.snapdragon.qdcm_ff
+
+echo "Reinstalling sdk"
+adb shell pm install-existing --user 0 com.oppo.qualityprotect
+
 echo "Reinstalling Secure Keyboard"
 adb shell pm install-existing --user 0 com.coloros.securitykeyboard
 
@@ -158,6 +203,9 @@ adb shell pm install-existing --user 0 com.nearme.atlas
 
 echo "Reinstalling SecurityAnalysis"
 adb shell pm install-existing --user 0 com.realme.securitycheck
+
+echo "Reinstalling Shelper"
+adb shell pm install-existing --user 0 com.daemon.shelper
 
 echo "Reinstalling SIM card apps"
 adb shell pm install-existing --user 0 com.android.stk
@@ -168,13 +216,16 @@ adb shell pm install-existing --user 0 com.google.android.accessibility.soundamp
 echo "Reinstalling Speech Services by Google"
 adb shell pm install-existing --user 0 com.google.android.tts
 
+echo "Reinstalling Update Service"
+adb shell pm install-existing --user 0 com.nearme.romupdate
+
 echo "Reinstalling User Experience Program"
 adb shell pm install-existing --user 0 com.nearme.statistics.rom
 
 echo "Reinstalling Video (System)"
 adb shell pm install-existing --user 0 com.coloros.video
 
-echo "Reinstalling Youtube"
+echo "Reinstalling YouTube"
 adb shell pm install-existing --user 0 com.google.android.youtube
 
 echo "Done!"
