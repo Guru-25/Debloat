@@ -1,4 +1,4 @@
-echo "Running realme 9 5G Speed Edition debloat script"
+echo "Running RMX3461 debloat script"
 
 echo "Disabling Browser"
 adb shell pm disable-user --user 0 com.heytap.browser
@@ -36,8 +36,14 @@ adb shell pm uninstall -k --user 0 com.coloros.oppomultiapp
 echo "Uninstalling APP Enhancement Services"
 adb shell pm uninstall -k --user 0 com.coloros.gamespace
 
+echo "Uninstalling ARCore"
+adb shell pm uninstall -k --user 0 com.google.ar.core
+
 echo "Uninstalling Assistant"
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
+
+echo "Uninstalling Athena"
+adb shell pm uninstall -k --user 0 com.coloros.athena
 
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
@@ -60,11 +66,26 @@ adb shell pm uninstall -k --user 0 com.android.chrome
 echo "Uninstalling Compass"
 adb shell pm uninstall -k --user 0 com.coloros.compass2
 
+echo "Uninstalling ConfigUpdater"
+adb shell pm uninstall -k --user 0 com.google.android.configupdater
+
+echo "Uninstalling CrashBox"
+adb shell pm uninstall -k --user 0 com.oplus.crashbox
+
 echo "Uninstalling Data Restore Tool"
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
+echo "Uninstalling DeepThinker"
+adb shell pm uninstall -k --user 0 com.oplus.deepthinker
+
 echo "Uninstalling Digital Wellbeing"
 adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
+
+echo "Uninstalling Downloads"
+adb shell pm uninstall -k --user 0 com.coloros.providers.downloads.ui
+
+echo "Uninstalling Feedback"
+adb shell pm uninstall -k --user 0 com.coloros.logkit 
 
 echo "Uninstalling File Manager"
 adb shell pm uninstall -k --user 0 com.coloros.filemanager
@@ -89,6 +110,9 @@ adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 
 echo "Uninstalling Google Assistant"
 adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
+
+echo "Uninstalling Google Location History"
+adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
 
 echo "Uninstalling Google Pay"
 adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.paisa.user
@@ -129,6 +153,21 @@ adb shell pm uninstall -k --user 0 com.facebook.services
 echo "Uninstalling Music"
 adb shell pm uninstall -k --user 0 com.heytap.music
 
+echo "Uninstalling Network Health Service"
+adb shell pm uninstall -k --user 0 com.oppo.nhs
+
+echo "Uninstalling OBrain"
+adb shell pm uninstall -k --user 0 com.oplus.obrain
+
+echo "Uninstalling OIDT Service"
+adb shell pm uninstall -k --user 0 com.oplus.postmanservice
+
+echo "Uninstalling OneTrace"
+adb shell pm uninstall -k --user 0 com.oplus.onetrace
+
+echo "Uninstalling OpenCapabilityService"
+adb shell pm uninstall -k --user 0 com.coloros.ocs.opencapabilityservice
+
 echo "Uninstalling OplusLFEHer"
 adb shell pm uninstall -k --user 0 com.oppo.lfeh
 
@@ -150,6 +189,12 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 echo "Uninstalling Private Safe"
 adb shell pm uninstall -k --user 0 com.coloros.encryption
 
+echo "Uninstalling QDCM-FF"
+adb shell pm uninstall -k --user 0 com.qti.snapdragon.qdcm_ff
+
+echo "Uninstalling sdk"
+adb shell pm uninstall -k --user 0 com.oppo.qualityprotect
+
 echo "Uninstalling Secure Keyboard"
 adb shell pm uninstall -k --user 0 com.coloros.securitykeyboard
 
@@ -158,6 +203,9 @@ adb shell pm uninstall -k --user 0 com.nearme.atlas
 
 echo "Uninstalling SecurityAnalysis"
 adb shell pm uninstall -k --user 0 com.realme.securitycheck
+
+echo "Uninstalling Shelper"
+adb shell pm uninstall -k --user 0 com.daemon.shelper
 
 echo "Uninstalling SIM card apps"
 adb shell pm uninstall -k --user 0 com.android.stk
@@ -168,13 +216,16 @@ adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifi
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
+echo "Uninstalling Update Service"
+adb shell pm uninstall -k --user 0 com.nearme.romupdate
+
 echo "Uninstalling User Experience Program"
 adb shell pm uninstall -k --user 0 com.nearme.statistics.rom
 
 echo "Uninstalling Video (System)"
 adb shell pm uninstall -k --user 0 com.coloros.video
 
-echo "Uninstalling Youtube"
+echo "Uninstalling YouTube"
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 
 echo "Done!"
