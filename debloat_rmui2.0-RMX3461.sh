@@ -213,7 +213,7 @@ adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifi
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
-echo "Uninstalling System Tracer"
+echo "Uninstalling System Tracing"
 adb shell pm uninstall -k --user 0 com.android.traceur
 
 echo "Uninstalling System Upgrade Services"
