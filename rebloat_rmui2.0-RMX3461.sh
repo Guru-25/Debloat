@@ -213,7 +213,7 @@ adb shell pm install-existing --user 0 com.google.android.accessibility.soundamp
 echo "Reinstalling Speech Services by Google"
 adb shell pm install-existing --user 0 com.google.android.tts
 
-echo "Reinstalling System Tracer"
+echo "Reinstalling System Tracing"
 adb shell pm install-existing --user 0 com.android.traceur
 
 echo "Reinstalling System Upgrade Services"
