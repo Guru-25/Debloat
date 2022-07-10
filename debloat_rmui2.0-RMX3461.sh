@@ -42,9 +42,6 @@ adb shell pm uninstall -k --user 0 com.google.ar.core
 echo "Uninstalling Assistant"
 adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
 
-echo "Uninstalling Athena"
-adb shell pm uninstall -k --user 0 com.coloros.athena
-
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
 
@@ -215,6 +212,12 @@ adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifi
 
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
+
+echo "Uninstalling System Tracer"
+adb shell pm uninstall -k --user 0 com.android.traceur
+
+echo "Uninstalling System Upgrade Services"
+adb shell pm uninstall -k --user 0 com.coloros.sau
 
 echo "Uninstalling Update Service"
 adb shell pm uninstall -k --user 0 com.nearme.romupdate
