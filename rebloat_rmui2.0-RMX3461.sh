@@ -42,9 +42,6 @@ adb shell pm install-existing --user 0 com.google.ar.core
 echo "Reinstalling Assistant"
 adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 
-echo "Reinstalling Athena"
-adb shell pm install-existing --user 0 com.coloros.athena
-
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
 
@@ -215,6 +212,12 @@ adb shell pm install-existing --user 0 com.google.android.accessibility.soundamp
 
 echo "Reinstalling Speech Services by Google"
 adb shell pm install-existing --user 0 com.google.android.tts
+
+echo "Reinstalling System Tracer"
+adb shell pm install-existing --user 0 com.android.traceur
+
+echo "Reinstalling System Upgrade Services"
+adb shell pm install-existing --user 0 com.coloros.sau
 
 echo "Reinstalling Update Service"
 adb shell pm install-existing --user 0 com.nearme.romupdate
