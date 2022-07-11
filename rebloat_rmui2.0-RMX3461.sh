@@ -156,9 +156,6 @@ adb shell pm install-existing --user 0 com.oppo.nhs
 echo "Reinstalling OBrain"
 adb shell pm install-existing --user 0 com.oplus.obrain
 
-echo "Reinstalling OIDT Service"
-adb shell pm install-existing --user 0 com.oplus.postmanservice
-
 echo "Reinstalling OneTrace"
 adb shell pm install-existing --user 0 com.oplus.onetrace
 
