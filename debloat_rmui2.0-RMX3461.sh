@@ -156,9 +156,6 @@ adb shell pm uninstall -k --user 0 com.oppo.nhs
 echo "Uninstalling OBrain"
 adb shell pm uninstall -k --user 0 com.oplus.obrain
 
-echo "Uninstalling OIDT Service"
-adb shell pm uninstall -k --user 0 com.oplus.postmanservice
-
 echo "Uninstalling OneTrace"
 adb shell pm uninstall -k --user 0 com.oplus.onetrace
 
