@@ -75,6 +75,9 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.files
 echo "Uninstalling FinShell Pay"
 adb shell pm uninstall -k --user 0 com.finshell.fin
 
+echo "Uninstalling Games"
+adb shell pm uninstall -k --user 0 com.oplus.games
+
 echo "Uninstalling Glance for realme"
 adb shell pm uninstall -k --user 0 com.glance.internet
 
