@@ -1,5 +1,5 @@
 # Debloat
-Debloat Scripts for Realme UI 2.0
+Debloat Scripts for Realme UI 3.0
 
 -----
 
