@@ -48,11 +48,14 @@ adb shell pm install-existing --user 0 com.google.android.ims
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
+echo "Reinstalling Compass"
+adb shell pm install-existing --user 0 com.coloros.compass2
+
 echo "Reinstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm install-existing --user 0 com.oplus.subsys
 
-echo "Reinstalling Compass"
-adb shell pm install-existing --user 0 com.coloros.compass2
+echo "Reinstalling com.ses.entitlement.o2.EntitlementApp"
+adb shell pm install-existing --user 0 com.ses.entitlement.o2
 
 echo "Reinstalling ConfigUpdater"
 adb shell pm install-existing --user 0 com.google.android.configupdater
@@ -74,6 +77,9 @@ adb shell pm install-existing --user 0 com.oplus.sos
 
 echo "Reinstalling Feedback"
 adb shell pm install-existing --user 0 com.oplus.logkit
+
+echo "Reinstalling FIDO UAF1.0 Client"
+adb shell pm install-existing --user 0 com.fido.uafclient
 
 echo "Reinstalling Files by Google"
 adb shell pm install-existing --user 0 com.google.android.apps.nbu.files
