@@ -48,11 +48,14 @@ adb shell pm uninstall -k --user 0 com.google.android.ims
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
+echo "Uninstalling Compass"
+adb shell pm uninstall -k --user 0 com.coloros.compass2
+
 echo "Uninstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm uninstall -k --user 0 com.oplus.subsys
 
-echo "Uninstalling Compass"
-adb shell pm uninstall -k --user 0 com.coloros.compass2
+echo "Uninstalling com.ses.entitlement.o2.EntitlementApp"
+adb shell pm uninstall -k --user 0 com.ses.entitlement.o2
 
 echo "Uninstalling ConfigUpdater"
 adb shell pm uninstall -k --user 0 com.google.android.configupdater
@@ -74,6 +77,9 @@ adb shell pm uninstall -k --user 0 com.oplus.sos
 
 echo "Uninstalling Feedback"
 adb shell pm uninstall -k --user 0 com.oplus.logkit
+
+echo "Uninstalling FIDO UAF1.0 Client"
+adb shell pm uninstall -k --user 0 com.fido.uafclient
 
 echo "Uninstalling Files by Google"
 adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.files
