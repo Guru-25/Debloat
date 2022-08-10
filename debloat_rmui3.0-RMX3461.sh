@@ -1,7 +1,4 @@
-echo "Running RMX3461 debloat script"
-
-echo "Disabling HeyTap Cloud"
-adb shell pm disable-user --user 0 com.heytap.cloud
+echo "Running realme 9 5G Speed Edition debloat script"
 
 echo "Disabling Internet"
 adb shell pm disable-user --user 0 com.heytap.browser
@@ -9,11 +6,14 @@ adb shell pm disable-user --user 0 com.heytap.browser
 echo "Disabling Lock Screen Magazine"
 adb shell pm disable-user --user 0 com.heytap.pictorial
 
-echo "Disabling My realme"
-adb shell pm disable-user --user 0 com.heytap.usercenter
+echo "Disabling realme Share"
+adb shell pm disable-user --user 0 com.coloros.oshare
 
 echo "Disabling System Messages"
 adb shell pm disable-user --user 0 com.heytap.mcs
+
+echo "Uninstalling aidlserverdemo"
+adb shell pm uninstall -k --user 0 com.tencent.soter.soterserver
 
 echo "Uninstalling Android Accessibility Suite"
 adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
@@ -23,9 +23,6 @@ adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 
 echo "Uninstalling Aod"
 adb shell pm uninstall -k --user 0 com.oplus.aod
-
-echo "Uninstalling App cloner"
-adb shell pm uninstall -k --user 0 com.oplus.multiapp
 
 echo "Uninstalling APP Enhancement Services"
 adb shell pm uninstall -k --user 0 com.oplus.cosa
@@ -51,6 +48,9 @@ adb shell pm uninstall -k --user 0 com.google.android.ims
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
+echo "Uninstalling com.oplus.subsys.SubsystemApplication"
+adb shell pm uninstall -k --user 0 com.oplus.subsys
+
 echo "Uninstalling Compass"
 adb shell pm uninstall -k --user 0 com.coloros.compass2
 
@@ -60,11 +60,17 @@ adb shell pm uninstall -k --user 0 com.google.android.configupdater
 echo "Uninstalling CrashBox"
 adb shell pm uninstall -k --user 0 com.oplus.crashbox
 
+echo "Uninstalling CustCoreApp"
+adb shell pm uninstall -k --user 0 com.oplus.customize.coreapp
+
 echo "Uninstalling Data Restore Tool"
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
 echo "Uninstalling Digital Wellbeing"
 adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
+
+echo "Uninstalling Emergency SOS"
+adb shell pm uninstall -k --user 0 com.oplus.sos
 
 echo "Uninstalling Feedback"
 adb shell pm uninstall -k --user 0 com.oplus.logkit
@@ -93,8 +99,14 @@ adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
 echo "Uninstalling Google Location History"
 adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
 
+echo "Uninstalling Google Partner Setup"
+adb shell pm uninstall -k --user 0 com.google.android.partnersetup
+
 echo "Uninstalling HeySynergy"
 adb shell pm uninstall -k --user 0 com.oplus.synergy
+
+echo "Uninstalling HeyTap Cloud"
+adb shell pm uninstall -k --user 0 com.heytap.cloud
 
 echo "Uninstalling Hot Apps"
 adb shell pm uninstall -k --user 0 com.opos.cs
@@ -135,8 +147,14 @@ adb shell pm uninstall -k --user 0 com.heytap.music
 echo "Uninstalling My Files"
 adb shell pm uninstall -k --user 0 com.coloros.filemanager
 
+echo "Uninstalling My realme"
+adb shell pm uninstall -k --user 0 com.heytap.usercenter
+
 echo "Uninstalling Network Health Service"
 adb shell pm uninstall -k --user 0 com.oplus.nhs
+
+echo "Uninstalling OIDT Service"
+adb shell pm uninstall -k --user 0 com.oplus.postmanservice
 
 echo "Uninstalling OpenCapabilityService"
 adb shell pm uninstall -k --user 0 com.coloros.ocs.opencapabilityservice
@@ -147,9 +165,6 @@ adb shell pm uninstall -k --user 0 com.oplus.lfeh
 echo "Uninstalling ORoaming"
 adb shell pm uninstall -k --user 0 com.redteamobile.roaming
 
-echo "Uninstalling Payment Protection"
-adb shell pm uninstall -k --user 0 com.coloros.securepay
-
 echo "Uninstalling Phone"
 adb shell pm uninstall -k --user 0 com.google.android.dialer
 
@@ -159,17 +174,20 @@ adb shell pm uninstall -k --user 0 com.coloros.phonemanager
 echo "Uninstalling Photos"
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 
-echo "Uninstalling Private Safe"
-adb shell pm uninstall -k --user 0 com.oplus.encryption
-
 echo "Uninstalling QDCM-FF"
 adb shell pm uninstall -k --user 0 com.qti.snapdragon.qdcm_ff
 
+echo "Uninstalling Quick device connect"
+adb shell pm uninstall -k --user 0 com.heytap.accessory
+
+echo "Uninstalling Recover Uninstalled System Apps"
+adb shell pm uninstall -k --user 0 com.oplus.apprecover
+
+echo "Uninstalling Screencast"
+adb shell pm uninstall -k --user 0 com.oplus.cast
+
 echo "Uninstalling sdk"
 adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
-
-echo "Uninstalling Secure Keyboard"
-adb shell pm uninstall -k --user 0 com.oplus.securitykeyboard
 
 echo "Uninstalling Secure Payment"
 adb shell pm uninstall -k --user 0 com.oplus.pay
@@ -189,6 +207,9 @@ adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifi
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
+echo "Uninstalling StdID"
+adb shell pm uninstall -k --user 0 com.oplus.stdid
+
 echo "Uninstalling System Tracing"
 adb shell pm uninstall -k --user 0 com.android.traceur
 
@@ -197,6 +218,9 @@ adb shell pm uninstall -k --user 0 com.oplus.sau
 
 echo "Uninstalling Theme Store"
 adb shell pm uninstall -k --user 0 com.heytap.themestore
+
+echo "Uninstalling TranslationService"
+adb shell pm uninstall -k --user 0 com.coloros.translate.engine
 
 echo "Uninstalling Update Service"
 adb shell pm uninstall -k --user 0 com.oplus.romupdate
