@@ -252,6 +252,9 @@ adb shell pm install-existing --user 0 com.realme.securitycheck
 echo "Reinstalling Shelper"
 adb shell pm install-existing --user 0 com.daemon.shelper
 
+echo "Reinstalling SIM card apps"
+adb shell pm install-existing --user 0 com.android.stk
+
 echo "Reinstalling Simple mode"
 adb shell pm install-existing --user 0 com.coloros.scenemode
 
