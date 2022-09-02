@@ -252,6 +252,9 @@ adb shell pm uninstall -k --user 0 com.realme.securitycheck
 echo "Uninstalling Shelper"
 adb shell pm uninstall -k --user 0 com.daemon.shelper
 
+echo "Uninstalling SIM card apps"
+adb shell pm uninstall -k --user 0 com.android.stk
+
 echo "Uninstalling Simple mode"
 adb shell pm uninstall -k --user 0 com.coloros.scenemode
 
