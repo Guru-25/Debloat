@@ -1,16 +1,7 @@
 echo "Running realme 9 5G Speed Edition debloat script"
 
-echo "Disabling Internet"
-adb shell pm disable-user --user 0 com.heytap.browser
-
-echo "Disabling Lock Screen Magazine"
-adb shell pm disable-user --user 0 com.heytap.pictorial
-
 echo "Disabling realme Share"
 adb shell pm disable-user --user 0 com.coloros.oshare
-
-echo "Disabling System Messages"
-adb shell pm disable-user --user 0 com.heytap.mcs
 
 echo "Uninstalling After-Sales Service"
 adb shell pm uninstall -k --user 0 com.oppoex.afterservice
@@ -74,6 +65,15 @@ adb shell pm uninstall -k --user 0 com.android.systemui.plugin.globalactions.wal
 
 echo "Uninstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm uninstall -k --user 0 com.oplus.subsys
+
+echo "Uninstalling com.qualcomm.atfwd"
+adb shell pm uninstall -k --user 0 com.qualcomm.atfwd
+
+echo "Uninstalling com.qualcomm.embms"
+adb shell pm uninstall -k --user 0 com.qualcomm.embms
+
+echo "Uninstalling com.qualcomm.qti.uim"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.uim
 
 echo "Uninstalling com.ses.entitlement.o2.EntitlementApp"
 adb shell pm uninstall -k --user 0 com.ses.entitlement.o2
@@ -150,6 +150,9 @@ adb shell pm uninstall -k --user 0 com.heytap.cloud
 echo "Uninstalling Hot Apps"
 adb shell pm uninstall -k --user 0 com.opos.cs
 
+echo "Uninstalling Internet"
+adb shell pm uninstall -k --user 0 com.heytap.browser
+
 echo "Uninstalling In-ear monitoring"
 adb shell pm uninstall -k --user 0 com.coloros.karaoke
 
@@ -161,6 +164,9 @@ adb shell pm uninstall -k --user 0 com.coloros.childrenspace
 
 echo "Uninstalling Lens"
 adb shell pm uninstall -k --user 0 com.google.ar.lens
+
+echo "Uninstalling Lock Screen Magazine"
+adb shell pm uninstall -k --user 0 com.heytap.pictorial
 
 echo "Uninstalling MBN Test"
 adb shell pm uninstall -k --user 0 com.qualcomm.qti.modemtestmode
@@ -255,6 +261,9 @@ adb shell pm uninstall -k --user 0 com.realme.wellbeing
 echo "Uninstalling Smart Sidebar"
 adb shell pm uninstall -k --user 0 com.coloros.smartsidebar
 
+echo "Uninstalling Smart-Divert"
+adb shell pm uninstall -k --user 0 com.qti.xdivert
+
 echo "Uninstalling Sound Amplifier"
 adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifier
 
@@ -263,6 +272,9 @@ adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo "Uninstalling StdID"
 adb shell pm uninstall -k --user 0 com.oplus.stdid
+
+echo "Uninstalling System Messages"
+adb shell pm uninstall -k --user 0 com.heytap.mcs
 
 echo "Uninstalling System Tracing"
 adb shell pm uninstall -k --user 0 com.android.traceur
