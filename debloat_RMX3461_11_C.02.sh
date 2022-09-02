@@ -276,6 +276,9 @@ adb shell pm uninstall -k --user 0 com.coloros.translate.engine
 echo "Uninstalling User Experience Program"
 adb shell pm uninstall -k --user 0 com.oplus.statistics.rom
 
+echo "Uninstalling User guide"
+adb shell pm uninstall -k --user 0 com.oppo.operationManual
+
 echo "Uninstalling Video (System)"
 adb shell pm uninstall -k --user 0 com.coloros.video
 
