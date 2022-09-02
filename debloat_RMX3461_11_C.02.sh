@@ -295,3 +295,5 @@ echo "Uninstalling YouTube"
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 
 echo "Done!"
+
+set /p exitkey= "Press any key to continue..."
