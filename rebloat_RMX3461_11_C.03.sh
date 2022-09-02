@@ -1,16 +1,7 @@
 echo "Running realme 9 5G Speed Edition rebloat script"
 
-echo "Enabling Internet"
-adb shell pm enable --user 0 com.heytap.browser
-
-echo "Enabling Lock Screen Magazine"
-adb shell pm enable --user 0 com.heytap.pictorial
-
 echo "Enabling realme Share"
 adb shell pm enable --user 0 com.coloros.oshare
-
-echo "Enabling System Messages"
-adb shell pm enable --user 0 com.heytap.mcs
 
 echo "Reinstalling After-Sales Service"
 adb shell pm install-existing --user 0 com.oppoex.afterservice
@@ -74,6 +65,15 @@ adb shell pm install-existing --user 0 com.android.systemui.plugin.globalactions
 
 echo "Reinstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm install-existing --user 0 com.oplus.subsys
+
+echo "Reinstalling com.qualcomm.atfwd"
+adb shell pm install-existing --user 0 com.qualcomm.atfwd
+
+echo "Reinstalling com.qualcomm.embms"
+adb shell pm install-existing --user 0 com.qualcomm.embms
+
+echo "Reinstalling com.qualcomm.qti.uim"
+adb shell pm install-existing --user 0 com.qualcomm.qti.uim
 
 echo "Reinstalling com.ses.entitlement.o2.EntitlementApp"
 adb shell pm install-existing --user 0 com.ses.entitlement.o2
@@ -150,6 +150,9 @@ adb shell pm install-existing --user 0 com.heytap.cloud
 echo "Reinstalling Hot Apps"
 adb shell pm install-existing --user 0 com.opos.cs
 
+echo "Reinstalling Internet"
+adb shell pm install-existing --user 0 com.heytap.browser
+
 echo "Reinstalling In-ear monitoring"
 adb shell pm install-existing --user 0 com.coloros.karaoke
 
@@ -161,6 +164,9 @@ adb shell pm install-existing --user 0 com.coloros.childrenspace
 
 echo "Reinstalling Lens"
 adb shell pm install-existing --user 0 com.google.ar.lens
+
+echo "Reinstalling Lock Screen Magazine"
+adb shell pm install-existing --user 0 com.heytap.pictorial
 
 echo "Reinstalling MBN Test"
 adb shell pm install-existing --user 0 com.qualcomm.qti.modemtestmode
@@ -255,6 +261,9 @@ adb shell pm install-existing --user 0 com.realme.wellbeing
 echo "Reinstalling Smart Sidebar"
 adb shell pm install-existing --user 0 com.coloros.smartsidebar
 
+echo "Reinstalling Smart-Divert"
+adb shell pm install-existing --user 0 com.qti.xdivert
+
 echo "Reinstalling Sound Amplifier"
 adb shell pm install-existing --user 0 com.google.android.accessibility.soundamplifier
 
@@ -263,6 +272,9 @@ adb shell pm install-existing --user 0 com.google.android.tts
 
 echo "Reinstalling StdID"
 adb shell pm install-existing --user 0 com.oplus.stdid
+
+echo "Reinstalling System Messages"
+adb shell pm install-existing --user 0 com.heytap.mcs
 
 echo "Reinstalling System Tracing"
 adb shell pm install-existing --user 0 com.android.traceur
