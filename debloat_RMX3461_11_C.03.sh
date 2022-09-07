@@ -303,9 +303,6 @@ adb shell pm uninstall -k --user 0 com.wapi.wapicertmanage
 echo "Uninstalling Weather"
 adb shell pm uninstall -k --user 0 com.coloros.weather2
 
-echo "Uninstalling Work Setup"
-adb shell pm uninstall -k --user 0 com.android.managedprovisioning
-
 echo "Uninstalling YouTube"
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 
