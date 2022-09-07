@@ -303,9 +303,6 @@ adb shell pm install-existing --user 0 com.wapi.wapicertmanage
 echo "Reinstalling Weather"
 adb shell pm install-existing --user 0 com.coloros.weather2
 
-echo "Reinstalling Work Setup"
-adb shell pm install-existing --user 0 com.android.managedprovisioning
-
 echo "Reinstalling YouTube"
 adb shell pm install-existing --user 0 com.google.android.youtube
 
