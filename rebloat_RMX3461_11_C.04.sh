@@ -3,6 +3,9 @@ echo "Running realme 9 5G Speed Edition rebloat script"
 echo "Enabling realme Share"
 adb shell pm enable --user 0 com.coloros.oshare
 
+echo "Enabling StdID"
+adb shell pm enable --user 0 com.oplus.stdid
+
 echo "Reinstalling After-Sales Service"
 adb shell pm install-existing --user 0 com.oppoex.afterservice
 
@@ -273,17 +276,11 @@ adb shell pm install-existing --user 0 com.google.android.accessibility.soundamp
 echo "Reinstalling Speech Services by Google"
 adb shell pm install-existing --user 0 com.google.android.tts
 
-echo "Reinstalling StdID"
-adb shell pm install-existing --user 0 com.oplus.stdid
-
 echo "Reinstalling System Messages"
 adb shell pm install-existing --user 0 com.heytap.mcs
 
 echo "Reinstalling System Tracing"
 adb shell pm install-existing --user 0 com.android.traceur
-
-echo "Reinstalling Theme Store"
-adb shell pm install-existing --user 0 com.heytap.themestore
 
 echo "Reinstalling TranslationService"
 adb shell pm install-existing --user 0 com.coloros.translate.engine
