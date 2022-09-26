@@ -5,9 +5,9 @@ Debloat Scripts for Realme UI 3.0
 
 ## Stats
 ```
-Disabled Apps          :  1
-Uninstalled Apps       : 101
-Total Debloated Apps   : 102
+Disabled Apps          :   2
+Uninstalled Apps       :  99
+Total Debloated Apps   : 101
 ```
 
 -----
