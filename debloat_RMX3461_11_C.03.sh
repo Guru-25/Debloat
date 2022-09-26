@@ -3,6 +3,9 @@ echo "Running realme 9 5G Speed Edition debloat script"
 echo "Disabling realme Share"
 adb shell pm disable-user --user 0 com.coloros.oshare
 
+echo "Disabling StdID"
+adb shell pm disable-user --user 0 com.oplus.stdid
+
 echo "Uninstalling After-Sales Service"
 adb shell pm uninstall -k --user 0 com.oppoex.afterservice
 
@@ -273,17 +276,11 @@ adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifi
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
-echo "Uninstalling StdID"
-adb shell pm uninstall -k --user 0 com.oplus.stdid
-
 echo "Uninstalling System Messages"
 adb shell pm uninstall -k --user 0 com.heytap.mcs
 
 echo "Uninstalling System Tracing"
 adb shell pm uninstall -k --user 0 com.android.traceur
-
-echo "Uninstalling Theme Store"
-adb shell pm uninstall -k --user 0 com.heytap.themestore
 
 echo "Uninstalling TranslationService"
 adb shell pm uninstall -k --user 0 com.coloros.translate.engine
