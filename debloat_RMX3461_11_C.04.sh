@@ -51,6 +51,9 @@ adb shell pm uninstall -k --user 0 com.google.android.calendar
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
 
+echo "Uninstalling Carrier Services"
+adb shell pm uninstall -k --user 0 com.google.android.ims
+
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
@@ -144,6 +147,9 @@ adb shell pm uninstall -k --user 0 com.google.android.onetimeinitializer
 echo "Uninstalling Google Partner Setup"
 adb shell pm uninstall -k --user 0 com.google.android.partnersetup
 
+echo "Uninstalling healthservice"
+adb shell pm uninstall -k --user 0 com.oplus.healthservice
+
 echo "Uninstalling HeySynergy"
 adb shell pm uninstall -k --user 0 com.oplus.synergy
 
@@ -152,6 +158,9 @@ adb shell pm uninstall -k --user 0 com.heytap.cloud
 
 echo "Uninstalling Hot Apps"
 adb shell pm uninstall -k --user 0 com.opos.cs
+
+echo "Uninstalling Intelligent Services"
+adb shell pm uninstall -k --user 0 com.oplus.deepthinker
 
 echo "Uninstalling Internet"
 adb shell pm uninstall -k --user 0 com.heytap.browser
@@ -234,6 +243,9 @@ adb shell pm uninstall -k --user 0 com.google.android.printservice.recommendatio
 echo "Uninstalling Quick device connect"
 adb shell pm uninstall -k --user 0 com.heytap.accessory
 
+echo "Uninstalling Recorder"
+adb shell pm uninstall -k --user 0 com.coloros.soundrecorder
+
 echo "Uninstalling Recover Uninstalled System Apps"
 adb shell pm uninstall -k --user 0 com.oplus.apprecover
 
@@ -284,6 +296,9 @@ adb shell pm uninstall -k --user 0 com.android.traceur
 
 echo "Uninstalling TranslationService"
 adb shell pm uninstall -k --user 0 com.coloros.translate.engine
+
+echo "Uninstalling Update Service"
+adb shell pm uninstall -k --user 0 com.oplus.romupdate
 
 echo "Uninstalling User Experience Program"
 adb shell pm uninstall -k --user 0 com.oplus.statistics.rom
