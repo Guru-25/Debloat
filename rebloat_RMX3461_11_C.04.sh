@@ -51,6 +51,9 @@ adb shell pm install-existing --user 0 com.google.android.calendar
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
 
+echo "Reinstalling Carrier Services"
+adb shell pm install-existing --user 0 com.google.android.ims
+
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
@@ -144,6 +147,9 @@ adb shell pm install-existing --user 0 com.google.android.onetimeinitializer
 echo "Reinstalling Google Partner Setup"
 adb shell pm install-existing --user 0 com.google.android.partnersetup
 
+echo "Reinstalling healthservice"
+adb shell pm install-existing --user 0 com.oplus.healthservice
+
 echo "Reinstalling HeySynergy"
 adb shell pm install-existing --user 0 com.oplus.synergy
 
@@ -152,6 +158,9 @@ adb shell pm install-existing --user 0 com.heytap.cloud
 
 echo "Reinstalling Hot Apps"
 adb shell pm install-existing --user 0 com.opos.cs
+
+echo "Reinstalling Intelligent Services"
+adb shell pm install-existing --user 0 com.oplus.deepthinker
 
 echo "Reinstalling Internet"
 adb shell pm install-existing --user 0 com.heytap.browser
@@ -234,6 +243,9 @@ adb shell pm install-existing --user 0 com.google.android.printservice.recommend
 echo "Reinstalling Quick device connect"
 adb shell pm install-existing --user 0 com.heytap.accessory
 
+echo "Reinstalling Recorder"
+adb shell pm install-existing --user 0 com.coloros.soundrecorder
+
 echo "Reinstalling Recover Uninstalled System Apps"
 adb shell pm install-existing --user 0 com.oplus.apprecover
 
@@ -284,6 +296,9 @@ adb shell pm install-existing --user 0 com.android.traceur
 
 echo "Reinstalling TranslationService"
 adb shell pm install-existing --user 0 com.coloros.translate.engine
+
+echo "Reinstalling Update Service"
+adb shell pm install-existing --user 0 com.oplus.romupdate
 
 echo "Reinstalling User Experience Program"
 adb shell pm install-existing --user 0 com.oplus.statistics.rom
