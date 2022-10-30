@@ -102,14 +102,14 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 echo "Uninstalling EmailPartnerProvider"
 adb shell pm uninstall -k --user 0 com.android.email.partnerprovider
 
-echo "Uninstalling Emergency SOS"
-adb shell pm uninstall -k --user 0 com.oplus.sos
-
 echo "Uninstalling E-warrenty card"
 adb shell pm uninstall -k --user 0 com.coloros.activation
 
 echo "Uninstalling Feedback"
 adb shell pm uninstall -k --user 0 com.oplus.logkit
+
+echo "Uninstalling FIDO UAF1.0 ASM"
+adb shell pm uninstall -k --user 0 com.fido.asm
 
 echo "Uninstalling FIDO UAF1.0 Client"
 adb shell pm uninstall -k --user 0 com.fido.uafclient
