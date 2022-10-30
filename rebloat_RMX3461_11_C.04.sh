@@ -102,14 +102,14 @@ adb shell pm install-existing --user 0 com.google.android.apps.wellbeing
 echo "Reinstalling EmailPartnerProvider"
 adb shell pm install-existing --user 0 com.android.email.partnerprovider
 
-echo "Reinstalling Emergency SOS"
-adb shell pm install-existing --user 0 com.oplus.sos
-
 echo "Reinstalling E-warrenty card"
 adb shell pm install-existing --user 0 com.coloros.activation
 
 echo "Reinstalling Feedback"
 adb shell pm install-existing --user 0 com.oplus.logkit
+
+echo "Reinstalling FIDO UAF1.0 ASM"
+adb shell pm install-existing --user 0 com.fido.asm
 
 echo "Reinstalling FIDO UAF1.0 Client"
 adb shell pm install-existing --user 0 com.fido.uafclient
