@@ -20,5 +20,4 @@ REMEMBER TO REBLOAT BEFORE ANY SYSTEM/OS UPGRADE
 
 ### DISCLAIMER:
 
-The list here provided are safe to remove which improve your privacy, security and battery life of your device. All the app uninstalled/disabled are tested, experienced and reproduced by myself in my own device. I have listed debloated apps only after testing in my device and caused no issues after removal.
-
+You can remove the items on this list to improve your privacy, security, and battery life of your device. I have tested, experienced, and reproduced all of the uninstalled/disabled apps on my own device. I listed debloated apps only after testing them on my device and removing them caused no issues.
