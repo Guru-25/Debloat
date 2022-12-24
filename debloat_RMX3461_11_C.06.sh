@@ -48,9 +48,6 @@ adb shell pm uninstall -k --user 0 com.google.android.calendar
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
 
-echo "Uninstalling Carrier Services"
-adb shell pm uninstall -k --user 0 com.google.android.ims
-
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
@@ -317,6 +314,9 @@ adb shell pm uninstall -k --user 0 com.wapi.wapicertmanage
 
 echo "Uninstalling Weather"
 adb shell pm uninstall -k --user 0 com.coloros.weather2
+
+echo "Uninstalling WifiBackupRestore"
+adb shell pm uninstall -k --user 0 com.oplus.wifibackuprestore
 
 echo "Uninstalling YouTube"
 adb shell pm uninstall -k --user 0 com.google.android.youtube
