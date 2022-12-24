@@ -48,9 +48,6 @@ adb shell pm install-existing --user 0 com.google.android.calendar
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
 
-echo "Reinstalling Carrier Services"
-adb shell pm install-existing --user 0 com.google.android.ims
-
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
@@ -317,6 +314,9 @@ adb shell pm install-existing --user 0 com.wapi.wapicertmanage
 
 echo "Reinstalling Weather"
 adb shell pm install-existing --user 0 com.coloros.weather2
+
+echo "Reinstalling WifiBackupRestore"
+adb shell pm install-existing --user 0 com.oplus.wifibackuprestore
 
 echo "Reinstalling YouTube"
 adb shell pm install-existing --user 0 com.google.android.youtube
