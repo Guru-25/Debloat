@@ -319,7 +319,7 @@ echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo "Uninstalling StdSP Core"
-adb shell pm uninstall -k 0 com.oplus.stdsp
+adb shell pm uninstall -k --user 0 com.oplus.stdsp
 
 echo "Uninstalling System Messages"
 adb shell pm uninstall -k --user 0 com.heytap.mcs
