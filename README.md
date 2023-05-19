@@ -1,20 +1,21 @@
 # Debloat
-Debloat Scripts for Realme UI 3.0
+Debloat Scripts for realme UI 4.0
 
 -----
 
 ## Stats
 ```
-Disabled Apps          :    1
-Uninstalled Apps       :  106
-Total Debloated Apps   :  107
+Disabled Apps          :    2
+Uninstalled Apps       :  115
+Total Debloated Apps   :  117
 ```
 
 -----
 
 ### NOTE:
 
-REMEMBER TO REBLOAT BEFORE ANY SYSTEM/OS UPGRADE
+- REMEMBER TO REBLOAT BEFORE ANY SYSTEM/OS UPGRADE
+- REMEMBER TO RUN `after-upgrade.sh` AFTER UPGRADING / DEBLOATING
 
 -----
 
