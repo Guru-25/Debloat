@@ -1,3 +1,4 @@
+adb shell pm install-existing --user 0 com.android.mms.service && adb shell pm enable --user 0 com.android.mms.service
 adb shell pm install-existing --user 0 com.coloros.athena && adb shell pm enable --user 0 com.coloros.athena
 adb shell pm install-existing --user 0 com.coloros.calculator && adb shell pm enable --user 0 com.coloros.calculator
 adb shell pm install-existing --user 0 com.coloros.encryption && adb shell pm enable --user 0 com.coloros.encryption
@@ -28,6 +29,7 @@ adb shell pm install-existing --user 0 com.oplus.multiapp && adb shell pm enable
 adb shell pm install-existing --user 0 com.oplus.pay && adb shell pm enable --user 0 com.oplus.pay
 adb shell pm install-existing --user 0 com.oplus.romupdate && adb shell pm enable --user 0 com.oplus.romupdate
 adb shell pm install-existing --user 0 com.oplus.sau && adb shell pm enable --user 0 com.oplus.sau
+adb shell pm install-existing --user 0 com.opos.cs && adb shell pm enable --user 0 com.opos.cs
 adb shell pm install-existing --user 0 com.oppo.lfeh && adb shell pm enable --user 0 com.oppo.lfeh
 adb shell pm install-existing --user 0 com.oppo.nhs && adb shell pm enable --user 0 com.oppo.nhs
 adb shell pm install-existing --user 0 com.oppo.operationManual && adb shell pm enable --user 0 com.oppo.operationManual
