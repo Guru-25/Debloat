@@ -3,6 +3,9 @@ echo "Running realme 9 5G Speed Edition debloat script"
 echo "Disabling realme Share"
 adb shell pm disable-user --user 0 com.coloros.oshare
 
+echo "Disabling Secure Payment"
+adb shell pm disable-user --user 0 com.oplus.pay
+
 echo "Disabling StdID"
 adb shell pm disable-user --user 0 com.oplus.stdid
 
@@ -21,8 +24,14 @@ adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 echo "Uninstalling Android S Easter Egg"
 adb shell pm uninstall -k --user 0 com.android.egg
 
+echo "Uninstalling Android System Intelligence"
+adb shell pm uninstall -k --user 0 com.google.android.as
+
 echo "Uninstalling Aod"
 adb shell pm uninstall -k --user 0 com.oplus.aod
+
+echo "Uninstalling App cloner"
+adb shell pm uninstall -k --user 0 com.oplus.multiapp
 
 echo "Uninstalling APP Enhancement Services"
 adb shell pm uninstall -k --user 0 com.oplus.cosa
@@ -39,6 +48,9 @@ adb shell pm uninstall -k --user 0 com.coloros.floatassistant
 echo "Uninstalling atlasService"
 adb shell pm uninstall -k --user 0 com.oplus.atlas
 
+echo "Uninstalling Basic Daydreams"
+adb shell pm uninstall -k --user 0 com.android.dreams.basic
+
 echo "Uninstalling Bluetooth MIDI Service"
 adb shell pm uninstall -k --user 0 com.android.bluetoothmidiservice
 
@@ -50,6 +62,9 @@ adb shell pm uninstall -k --user 0 com.oplus.bttestmode
 
 echo "Uninstalling Calendar"
 adb shell pm uninstall -k --user 0 com.google.android.calendar
+
+echo "Uninstalling Calendar storage"
+adb shell pm uninstall -k --user 0 com.android.providers.calendar
 
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
@@ -69,9 +84,6 @@ adb shell pm uninstall -k --user 0 com.oplus.ocloud
 echo "Uninstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm uninstall -k --user 0 com.oplus.subsys
 
-echo "Uninstalling com.opos.cs"
-adb shell pm uninstall -k --user 0 com.opos.cs
-
 echo "Uninstalling com.qualcomm.atfwd"
 adb shell pm uninstall -k --user 0 com.qualcomm.atfwd
 
@@ -86,6 +98,9 @@ adb shell pm uninstall -k --user 0 com.ses.entitlement.o2
 
 echo "Uninstalling Combine captions"
 adb shell pm uninstall -k --user 0 com.realme.movieshot
+
+echo "Uninstalling CommercialMidGround"
+adb shell pm uninstall -k --user 0 com.oplus.commercial
 
 echo "Uninstalling Compass"
 adb shell pm uninstall -k --user 0 com.coloros.compass2
@@ -116,6 +131,9 @@ adb shell pm uninstall -k --user 0 com.android.email.partnerprovider
 
 echo "Uninstalling Emergency SOS"
 adb shell pm uninstall -k --user 0 com.oplus.sos
+
+echo "Uninstalling Family Link parental controls"
+adb shell pm uninstall -k --user 0 com.google.android.gms.supervision
 
 echo "Uninstalling Feedback"
 adb shell pm uninstall -k --user 0 com.oplus.logkit
@@ -150,6 +168,9 @@ adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 echo "Uninstalling Google Assistant"
 adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
 
+echo "Uninstalling Google Assistant"
+adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.xgoogle
+
 echo "Uninstalling Google Location History"
 adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
 
@@ -173,9 +194,6 @@ adb shell pm uninstall -k --user 0 com.heytap.cloud
 
 echo "Uninstalling In-ear monitoring"
 adb shell pm uninstall -k --user 0 com.coloros.karaoke
-
-echo "Uninstalling Information Services"
-adb shell pm uninstall -k --user 0 com.android.mms.service
 
 echo "Uninstalling Intelligent Services"
 adb shell pm uninstall -k --user 0 com.oplus.deepthinker
@@ -231,7 +249,10 @@ adb shell pm uninstall -k --user 0 com.heytap.usercenter
 echo "Uninstalling NetworkHealthService"
 adb shell pm uninstall -k --user 0 com.oplus.nhs
 
-echo "Uninstalling  OBrain"
+echo "Uninstalling NFC Service"
+adb shell pm uninstall -k --user 0 com.android.nfc
+
+echo "Uninstalling OBrain"
 adb shell pm uninstall -k --user 0 com.oplus.obrain
 
 echo "Uninstalling Olc"
@@ -344,6 +365,9 @@ adb shell pm uninstall -k --user 0 com.coloros.weather2
 
 echo "Uninstalling WifiBackupRestore"
 adb shell pm uninstall -k --user 0 com.oplus.wifibackuprestore
+
+echo "Uninstalling Wireless Earphones"
+adb shell pm uninstall -k --user 0 com.oplus.melody
 
 echo "Uninstalling Work Setup"
 adb shell pm uninstall -k --user 0 com.android.managedprovisioning
