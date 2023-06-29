@@ -3,6 +3,9 @@ echo "Running realme 9 5G Speed Edition rebloat script"
 echo "Enabling realme Share"
 adb shell pm enable --user 0 com.coloros.oshare
 
+echo "Enabling Secure Payment"
+adb shell pm enable --user 0 com.oplus.pay
+
 echo "Enabling StdID"
 adb shell pm enable --user 0 com.oplus.stdid
 
@@ -21,8 +24,14 @@ adb shell pm install-existing --user 0 com.google.android.projection.gearhead
 echo "Reinstalling Android S Easter Egg"
 adb shell pm install-existing --user 0 com.android.egg
 
+echo "Reinstalling Android System Intelligence"
+adb shell pm install-existing --user 0 com.google.android.as
+
 echo "Reinstalling Aod"
 adb shell pm install-existing --user 0 com.oplus.aod
+
+echo "Reinstalling App cloner"
+adb shell pm install-existing --user 0 com.oplus.multiapp
 
 echo "Reinstalling APP Enhancement Services"
 adb shell pm install-existing --user 0 com.oplus.cosa
@@ -39,6 +48,9 @@ adb shell pm install-existing --user 0 com.coloros.floatassistant
 echo "Reinstalling atlasService"
 adb shell pm install-existing --user 0 com.oplus.atlas
 
+echo "Reinstalling Basic Daydreams"
+adb shell pm install-existing --user 0 com.android.dreams.basic
+
 echo "Reinstalling Bluetooth MIDI Service"
 adb shell pm install-existing --user 0 com.android.bluetoothmidiservice
 
@@ -50,6 +62,9 @@ adb shell pm install-existing --user 0 com.oplus.bttestmode
 
 echo "Reinstalling Calendar"
 adb shell pm install-existing --user 0 com.google.android.calendar
+
+echo "Reinstalling Calendar storage"
+adb shell pm install-existing --user 0 com.android.providers.calendar
 
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
@@ -69,9 +84,6 @@ adb shell pm install-existing --user 0 com.oplus.ocloud
 echo "Reinstalling com.oplus.subsys.SubsystemApplication"
 adb shell pm install-existing --user 0 com.oplus.subsys
 
-echo "Reinstalling com.opos.cs"
-adb shell pm install-existing --user 0 com.opos.cs
-
 echo "Reinstalling com.qualcomm.atfwd"
 adb shell pm install-existing --user 0 com.qualcomm.atfwd
 
@@ -86,6 +98,9 @@ adb shell pm install-existing --user 0 com.ses.entitlement.o2
 
 echo "Reinstalling Combine captions"
 adb shell pm install-existing --user 0 com.realme.movieshot
+
+echo "Reinstalling CommercialMidGround"
+adb shell pm install-existing --user 0 com.oplus.commercial
 
 echo "Reinstalling Compass"
 adb shell pm install-existing --user 0 com.coloros.compass2
@@ -116,6 +131,9 @@ adb shell pm install-existing --user 0 com.android.email.partnerprovider
 
 echo "Reinstalling Emergency SOS"
 adb shell pm install-existing --user 0 com.oplus.sos
+
+echo "Reinstalling Family Link parental controls"
+adb shell pm install-existing --user 0 com.google.android.gms.supervision
 
 echo "Reinstalling Feedback"
 adb shell pm install-existing --user 0 com.oplus.logkit
@@ -150,6 +168,9 @@ adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 echo "Reinstalling Google Assistant"
 adb shell pm install-existing --user 0 com.android.hotwordenrollment.okgoogle
 
+echo "Reinstalling Google Assistant"
+adb shell pm install-existing --user 0 com.android.hotwordenrollment.xgoogle
+
 echo "Reinstalling Google Location History"
 adb shell pm install-existing --user 0 com.google.android.gms.location.history
 
@@ -173,9 +194,6 @@ adb shell pm install-existing --user 0 com.heytap.cloud
 
 echo "Reinstalling In-ear monitoring"
 adb shell pm install-existing --user 0 com.coloros.karaoke
-
-echo "Reinstalling Information Services"
-adb shell pm install-existing --user 0 com.android.mms.service
 
 echo "Reinstalling Intelligent Services"
 adb shell pm install-existing --user 0 com.oplus.deepthinker
@@ -231,7 +249,10 @@ adb shell pm install-existing --user 0 com.heytap.usercenter
 echo "Reinstalling NetworkHealthService"
 adb shell pm install-existing --user 0 com.oplus.nhs
 
-echo "Reinstalling  OBrain"
+echo "Reinstalling NFC Service"
+adb shell pm install-existing --user 0 com.android.nfc
+
+echo "Reinstalling OBrain"
 adb shell pm install-existing --user 0 com.oplus.obrain
 
 echo "Reinstalling Olc"
@@ -344,6 +365,9 @@ adb shell pm install-existing --user 0 com.coloros.weather2
 
 echo "Reinstalling WifiBackupRestore"
 adb shell pm install-existing --user 0 com.oplus.wifibackuprestore
+
+echo "Reinstalling Wireless Earphones"
+adb shell pm install-existing --user 0 com.oplus.melody
 
 echo "Reinstalling Work Setup"
 adb shell pm install-existing --user 0 com.android.managedprovisioning
