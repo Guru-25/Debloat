@@ -294,6 +294,9 @@ adb shell pm uninstall -k --user 0 com.oplus.portrait
 echo "Uninstalling Print Service Recommendation Service"
 adb shell pm uninstall -k --user 0 com.google.android.printservice.recommendation
 
+echo "Uninstalling Private Safe"
+adb shell pm uninstall -k --user 0 com.oplus.encryption
+
 echo "Uninstalling QualityProtect"
 adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
 
