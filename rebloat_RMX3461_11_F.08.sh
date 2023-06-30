@@ -294,6 +294,9 @@ adb shell pm install-existing --user 0 com.oplus.portrait
 echo "Reinstalling Print Service Recommendation Service"
 adb shell pm install-existing --user 0 com.google.android.printservice.recommendation
 
+echo "Reinstalling Private Safe"
+adb shell pm install-existing --user 0 com.oplus.encryption
+
 echo "Reinstalling QualityProtect"
 adb shell pm install-existing --user 0 com.oplus.qualityprotect
 
