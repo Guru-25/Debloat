@@ -273,6 +273,9 @@ adb shell pm install-existing --user 0 com.coloros.ocs.opencapabilityservice
 echo "Reinstalling OplusLFEHer"
 adb shell pm install-existing --user 0 com.oplus.lfeh
 
+echo "Reinstalling OPSynergy"
+adb shell pm install-existing --user 0 com.oplus.linker
+
 echo "Reinstalling ORoaming"
 adb shell pm install-existing --user 0 com.redteamobile.roaming
 
