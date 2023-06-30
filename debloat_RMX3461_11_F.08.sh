@@ -273,6 +273,9 @@ adb shell pm uninstall -k --user 0 com.coloros.ocs.opencapabilityservice
 echo "Uninstalling OplusLFEHer"
 adb shell pm uninstall -k --user 0 com.oplus.lfeh
 
+echo "Uninstalling OPSynergy"
+adb shell pm uninstall -k --user 0 com.oplus.linker
+
 echo "Uninstalling ORoaming"
 adb shell pm uninstall -k --user 0 com.redteamobile.roaming
 
