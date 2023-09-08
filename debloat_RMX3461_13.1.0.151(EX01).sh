@@ -6,9 +6,6 @@ adb shell pm disable-user --user 0 com.coloros.oshare
 echo "Disabling Secure Payment"
 adb shell pm disable-user --user 0 com.oplus.pay
 
-echo "Disabling StdID"
-adb shell pm disable-user --user 0 com.oplus.stdid
-
 echo "Uninstalling aidlserverdemo"
 adb shell pm uninstall -k --user 0 com.rongcard.eidapi
 
@@ -69,6 +66,9 @@ adb shell pm uninstall -k --user 0 com.android.providers.calendar
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
 
+echo "Uninstalling Carrier Location Services"
+adb shell pm uninstall -k --user 0 com.oplus.locationproxy
+
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
@@ -93,6 +93,15 @@ adb shell pm uninstall -k --user 0 com.qualcomm.embms
 echo "Uninstalling com.qualcomm.qti.uim"
 adb shell pm uninstall -k --user 0 com.qualcomm.qti.uim
 
+echo "Uninstalling com.qualcomm.qti.uimGbaApp"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.uimGbaApp
+
+echo "Uninstalling com.qualcomm.qti.uimremoteclient"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.uimremoteclient
+
+echo "Uninstalling com.qualcomm.qti.uimremoteserver"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.uimremoteserver
+
 echo "Uninstalling com.ses.entitlement.o2.EntitlementApp"
 adb shell pm uninstall -k --user 0 com.ses.entitlement.o2
 
@@ -114,6 +123,9 @@ adb shell pm uninstall -k --user 0 com.oplus.customize.coreapp
 echo "Uninstalling Data Restore Tool"
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
+echo "Uninstalling DCF"
+adb shell pm uninstall -k --user 0 com.qti.dcf
+
 echo "Uninstalling Diagnostic Tool"
 adb shell pm uninstall -k --user 0 com.oplus.postmanservice
 
@@ -123,8 +135,14 @@ adb shell pm uninstall -k --user 0 com.coloros.healthcheck
 echo "Uninstalling Digital Wellbeing"
 adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 
+echo "Uninstalling DSF"
+adb shell pm uninstall -k --user 0 com.oplus.ndsf
+
 echo "Uninstalling E-warrenty card"
 adb shell pm uninstall -k --user 0 com.coloros.activation
+
+echo "Uninstalling Eid-Service"
+adb shell pm uninstall -k --user 0 com.oplus.eid
 
 echo "Uninstalling EmailPartnerProvider"
 adb shell pm uninstall -k --user 0 com.android.email.partnerprovider
@@ -213,6 +231,9 @@ adb shell pm uninstall -k --user 0 com.coloros.childrenspace
 echo "Uninstalling Lens"
 adb shell pm uninstall -k --user 0 com.google.ar.lens
 
+echo "Uninstalling LocationServices"
+adb shell pm uninstall -k --user 0 com.qualcomm.location
+
 echo "Uninstalling Lock Screen Magazine"
 adb shell pm uninstall -k --user 0 com.heytap.pictorial
 
@@ -248,6 +269,9 @@ adb shell pm uninstall -k --user 0 com.heytap.usercenter
 
 echo "Uninstalling NetworkHealthService"
 adb shell pm uninstall -k --user 0 com.oplus.nhs
+
+echo "Uninstalling Network Services"
+adb shell pm uninstall -k --user 0 com.oplus.nas
 
 echo "Uninstalling NFC Service"
 adb shell pm uninstall -k --user 0 com.android.nfc
@@ -347,6 +371,9 @@ adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo "Uninstalling StdSP Core"
 adb shell pm uninstall -k --user 0 com.oplus.stdsp
+
+echo "Uninstalling System Cloner"
+adb shell pm uninstall -k --user 0 com.coloros.systemcloner
 
 echo "Uninstalling System Messages"
 adb shell pm uninstall -k --user 0 com.heytap.mcs
