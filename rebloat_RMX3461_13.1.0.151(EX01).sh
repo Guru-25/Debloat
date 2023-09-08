@@ -6,9 +6,6 @@ adb shell pm enable --user 0 com.coloros.oshare
 echo "Enabling Secure Payment"
 adb shell pm enable --user 0 com.oplus.pay
 
-echo "Enabling StdID"
-adb shell pm enable --user 0 com.oplus.stdid
-
 echo "Reinstalling aidlserverdemo"
 adb shell pm install-existing --user 0 com.rongcard.eidapi
 
@@ -69,6 +66,9 @@ adb shell pm install-existing --user 0 com.android.providers.calendar
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
 
+echo "Reinstalling Carrier Location Services"
+adb shell pm install-existing --user 0 com.oplus.locationproxy
+
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
@@ -93,6 +93,15 @@ adb shell pm install-existing --user 0 com.qualcomm.embms
 echo "Reinstalling com.qualcomm.qti.uim"
 adb shell pm install-existing --user 0 com.qualcomm.qti.uim
 
+echo "Reinstalling com.qualcomm.qti.uimGbaApp"
+adb shell pm install-existing --user 0 com.qualcomm.qti.uimGbaApp
+
+echo "Reinstalling com.qualcomm.qti.uimremoteclient"
+adb shell pm install-existing --user 0 com.qualcomm.qti.uimremoteclient
+
+echo "Reinstalling com.qualcomm.qti.uimremoteserver"
+adb shell pm install-existing --user 0 com.qualcomm.qti.uimremoteserver
+
 echo "Reinstalling com.ses.entitlement.o2.EntitlementApp"
 adb shell pm install-existing --user 0 com.ses.entitlement.o2
 
@@ -114,6 +123,9 @@ adb shell pm install-existing --user 0 com.oplus.customize.coreapp
 echo "Reinstalling Data Restore Tool"
 adb shell pm install-existing --user 0 com.google.android.apps.restore
 
+echo "Reinstalling DCF"
+adb shell pm install-existing --user 0 com.qti.dcf
+
 echo "Reinstalling Diagnostic Tool"
 adb shell pm install-existing --user 0 com.oplus.postmanservice
 
@@ -123,8 +135,14 @@ adb shell pm install-existing --user 0 com.coloros.healthcheck
 echo "Reinstalling Digital Wellbeing"
 adb shell pm install-existing --user 0 com.google.android.apps.wellbeing
 
+echo "Reinstalling DSF"
+adb shell pm install-existing --user 0 com.oplus.ndsf
+
 echo "Reinstalling E-warrenty card"
 adb shell pm install-existing --user 0 com.coloros.activation
+
+echo "Reinstalling Eid-Service"
+adb shell pm install-existing --user 0 com.oplus.eid
 
 echo "Reinstalling EmailPartnerProvider"
 adb shell pm install-existing --user 0 com.android.email.partnerprovider
@@ -213,6 +231,9 @@ adb shell pm install-existing --user 0 com.coloros.childrenspace
 echo "Reinstalling Lens"
 adb shell pm install-existing --user 0 com.google.ar.lens
 
+echo "Reinstalling LocationServices"
+adb shell pm install-existing --user 0 com.qualcomm.location
+
 echo "Reinstalling Lock Screen Magazine"
 adb shell pm install-existing --user 0 com.heytap.pictorial
 
@@ -248,6 +269,9 @@ adb shell pm install-existing --user 0 com.heytap.usercenter
 
 echo "Reinstalling NetworkHealthService"
 adb shell pm install-existing --user 0 com.oplus.nhs
+
+echo "Reinstalling Network Services"
+adb shell pm install-existing --user 0 com.oplus.nas
 
 echo "Reinstalling NFC Service"
 adb shell pm install-existing --user 0 com.android.nfc
@@ -347,6 +371,9 @@ adb shell pm install-existing --user 0 com.google.android.tts
 
 echo "Reinstalling StdSP Core"
 adb shell pm install-existing --user 0 com.oplus.stdsp
+
+echo "Reinstalling System Cloner"
+adb shell pm install-existing --user 0 com.coloros.systemcloner
 
 echo "Reinstalling System Messages"
 adb shell pm install-existing --user 0 com.heytap.mcs
