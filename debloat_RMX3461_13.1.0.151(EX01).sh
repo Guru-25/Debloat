@@ -373,7 +373,7 @@ echo "Uninstalling StdSP Core"
 adb shell pm uninstall -k --user 0 com.oplus.stdsp
 
 echo "Uninstalling System Cloner"
-adb shell pm uninstall -k --user 0 com.coloros.systemcloner
+adb shell pm uninstall -k --user 0 com.coloros.systemclone
 
 echo "Uninstalling System Messages"
 adb shell pm uninstall -k --user 0 com.heytap.mcs
