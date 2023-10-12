@@ -373,7 +373,7 @@ echo "Reinstalling StdSP Core"
 adb shell pm install-existing --user 0 com.oplus.stdsp
 
 echo "Reinstalling System Cloner"
-adb shell pm install-existing --user 0 com.coloros.systemcloner
+adb shell pm install-existing --user 0 com.coloros.systemclone
 
 echo "Reinstalling System Messages"
 adb shell pm install-existing --user 0 com.heytap.mcs
