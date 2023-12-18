@@ -348,6 +348,9 @@ adb shell pm uninstall -k --user 0 com.google.android.printservice.recommendatio
 echo "Uninstalling Private Safe"
 adb shell pm uninstall -k --user 0 com.oplus.encryption
 
+echo "Uninstalling ProxyHandler"
+adb shell pm uninstall -k --user 0 com.android.proxyhandler
+
 echo "Uninstalling QualityProtect"
 adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
 
