@@ -12,6 +12,9 @@ adb shell pm install-existing --user 0 com.rongcard.eidapi
 echo "Reinstalling aidlserverdemo"
 adb shell pm install-existing --user 0 com.tencent.soter.soterserver
 
+echo "Reinstalling Always-On-Display"
+adb shell pm install-existing --user 0 com.oplus.aod
+
 echo "Reinstalling Android Accessibility Suite"
 adb shell pm install-existing --user 0 com.google.android.marvin.talkback
 
@@ -21,13 +24,13 @@ adb shell pm install-existing --user 0 com.google.android.projection.gearhead
 echo "Reinstalling Android S Easter Egg"
 adb shell pm install-existing --user 0 com.android.egg
 
+echo "Reinstalling Android Shared Library"
+adb shell pm install-existing --user 0 com.google.android.ext.shared
+
 echo "Reinstalling Android System Intelligence"
 adb shell pm install-existing --user 0 com.google.android.as
 
-echo "Reinstalling Aod"
-adb shell pm install-existing --user 0 com.oplus.aod
-
-echo "Reinstalling App cloner"
+echo "Reinstalling App Cloner"
 adb shell pm install-existing --user 0 com.oplus.multiapp
 
 echo "Reinstalling APP Enhancement Services"
@@ -66,29 +69,47 @@ adb shell pm install-existing --user 0 com.android.providers.calendar
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
 
+echo "Reinstalling Canvas"
+adb shell pm install-existing --user 0 com.oplus.portrait
+
 echo "Reinstalling Carrier Location Services"
 adb shell pm install-existing --user 0 com.oplus.locationproxy
+
+echo "Reinstalling CarrierDefaultApp"
+adb shell pm install-existing --user 0 com.android.carrierdefaultapp
 
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
+echo "Reinstalling com.android.cts.ctsshim"
+adb shell pm install-existing --user 0 com.android.cts.ctsshim
+
+echo "Reinstalling com.android.ons"
+adb shell pm install-existing --user 0 com.android.ons
+
 echo "Reinstalling com.android.providers.partnerbookmarks"
 adb shell pm install-existing --user 0 com.android.providers.partnerbookmarks
+
+echo "Reinstalling com.android.sharedstoragebackup"
+adb shell pm install-existing --user 0 com.android.sharedstoragebackup
 
 echo "Reinstalling com.android.systemui.plugin.globalactions.wallet"
 adb shell pm install-existing --user 0 com.android.systemui.plugin.globalactions.wallet
 
+echo "Reinstalling com.android.wallpaperbackup"
+adb shell pm install-existing --user 0 com.android.wallpaperbackup
+
 echo "Reinstalling com.oplus.ocloud"
 adb shell pm install-existing --user 0 com.oplus.ocloud
-
-echo "Reinstalling com.oplus.subsys.SubsystemApplication"
-adb shell pm install-existing --user 0 com.oplus.subsys
 
 echo "Reinstalling com.qualcomm.atfwd"
 adb shell pm install-existing --user 0 com.qualcomm.atfwd
 
 echo "Reinstalling com.qualcomm.embms"
 adb shell pm install-existing --user 0 com.qualcomm.embms
+
+echo "Reinstalling com.qualcomm.qti.lpa"
+adb shell pm install-existing --user 0 com.qualcomm.qti.lpa
 
 echo "Reinstalling com.qualcomm.qti.uim"
 adb shell pm install-existing --user 0 com.qualcomm.qti.uim
@@ -120,11 +141,14 @@ adb shell pm install-existing --user 0 com.oplus.crashbox
 echo "Reinstalling CustCoreApp"
 adb shell pm install-existing --user 0 com.oplus.customize.coreapp
 
-echo "Reinstalling Data Restore Tool"
+echo "Reinstalling Data restore Tool"
 adb shell pm install-existing --user 0 com.google.android.apps.restore
 
-echo "Reinstalling DCF"
+echo "Reinstalling dcf"
 adb shell pm install-existing --user 0 com.qti.dcf
+
+echo "Reinstalling Default Print Service"
+adb shell pm install-existing --user 0 com.android.bips
 
 echo "Reinstalling Diagnostic Tool"
 adb shell pm install-existing --user 0 com.oplus.postmanservice
@@ -184,10 +208,10 @@ echo "Reinstalling Google"
 adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 
 echo "Reinstalling Google Assistant"
-adb shell pm install-existing --user 0 com.android.hotwordenrollment.okgoogle
+adb shell pm install-existing --user 0 com.android.hotwordenrollment.xgoogle
 
 echo "Reinstalling Google Assistant"
-adb shell pm install-existing --user 0 com.android.hotwordenrollment.xgoogle
+adb shell pm install-existing --user 0 com.android.hotwordenrollment.okgoogle
 
 echo "Reinstalling Google Location History"
 adb shell pm install-existing --user 0 com.google.android.gms.location.history
@@ -222,7 +246,7 @@ adb shell pm install-existing --user 0 com.oplus.interconnectcollectkit
 echo "Reinstalling Internet"
 adb shell pm install-existing --user 0 com.heytap.browser
 
-echo "Reinstalling Keep Notes"
+echo "Reinstalling Keep notes"
 adb shell pm install-existing --user 0 com.google.android.keep
 
 echo "Reinstalling Kid Space"
@@ -230,6 +254,9 @@ adb shell pm install-existing --user 0 com.coloros.childrenspace
 
 echo "Reinstalling Lens"
 adb shell pm install-existing --user 0 com.google.ar.lens
+
+echo "Reinstalling Live wallpaper selector"
+adb shell pm install-existing --user 0 com.android.wallpaper.livepicker
 
 echo "Reinstalling LocationServices"
 adb shell pm install-existing --user 0 com.qualcomm.location
@@ -267,11 +294,11 @@ adb shell pm install-existing --user 0 com.coloros.filemanager
 echo "Reinstalling My realme"
 adb shell pm install-existing --user 0 com.heytap.usercenter
 
+echo "Reinstalling Network services"
+adb shell pm install-existing --user 0 com.oplus.nas
+
 echo "Reinstalling NetworkHealthService"
 adb shell pm install-existing --user 0 com.oplus.nhs
-
-echo "Reinstalling Network Services"
-adb shell pm install-existing --user 0 com.oplus.nas
 
 echo "Reinstalling NFC Service"
 adb shell pm install-existing --user 0 com.android.nfc
@@ -303,11 +330,11 @@ adb shell pm install-existing --user 0 com.oplus.linker
 echo "Reinstalling ORoaming"
 adb shell pm install-existing --user 0 com.redteamobile.roaming
 
+echo "Reinstalling PacProcessor"
+adb shell pm install-existing --user 0 com.android.pacprocessor
+
 echo "Reinstalling Payment protection"
 adb shell pm install-existing --user 0 com.coloros.securepay
-
-echo "Reinstalling Phone"
-adb shell pm install-existing --user 0 com.google.android.dialer
 
 echo "Reinstalling Phone Manager"
 adb shell pm install-existing --user 0 com.coloros.phonemanager
@@ -315,19 +342,19 @@ adb shell pm install-existing --user 0 com.coloros.phonemanager
 echo "Reinstalling Photos"
 adb shell pm install-existing --user 0 com.google.android.apps.photos
 
-echo "Reinstalling Portrait silhouette"
-adb shell pm install-existing --user 0 com.oplus.portrait
-
 echo "Reinstalling Print Service Recommendation Service"
 adb shell pm install-existing --user 0 com.google.android.printservice.recommendation
 
 echo "Reinstalling Private Safe"
 adb shell pm install-existing --user 0 com.oplus.encryption
 
+echo "Reinstalling ProxyHandler"
+adb shell pm install-existing --user 0 com.android.proxyhandler
+
 echo "Reinstalling QualityProtect"
 adb shell pm install-existing --user 0 com.oplus.qualityprotect
 
-echo "Reinstalling Quick device connect"
+echo "Reinstalling Quick Connect"
 adb shell pm install-existing --user 0 com.heytap.accessory
 
 echo "Reinstalling Recorder"
@@ -341,9 +368,6 @@ adb shell pm install-existing --user 0 com.oplus.cast
 
 echo "Reinstalling Secure Keyboard"
 adb shell pm install-existing --user 0 com.oplus.securitykeyboard
-
-echo "Reinstalling SecurityAnalysis"
-adb shell pm install-existing --user 0 com.realme.securitycheck
 
 echo "Reinstalling Shelf"
 adb shell pm install-existing --user 0 com.coloros.assistantscreen
@@ -363,14 +387,14 @@ adb shell pm install-existing --user 0 com.realme.wellbeing
 echo "Reinstalling Smart Sidebar"
 adb shell pm install-existing --user 0 com.coloros.smartsidebar
 
-echo "Reinstalling Smart-Divert"
-adb shell pm install-existing --user 0 com.qti.xdivert
-
 echo "Reinstalling Speech Services by Google"
 adb shell pm install-existing --user 0 com.google.android.tts
 
 echo "Reinstalling StdSP Core"
 adb shell pm install-existing --user 0 com.oplus.stdsp
+
+echo "Reinstalling Subsystem Service"
+adb shell pm install-existing --user 0 com.oplus.subsys
 
 echo "Reinstalling System Cloner"
 adb shell pm install-existing --user 0 com.coloros.systemclone
@@ -381,11 +405,17 @@ adb shell pm install-existing --user 0 com.heytap.mcs
 echo "Reinstalling System Tracing"
 adb shell pm install-existing --user 0 com.android.traceur
 
+echo "Reinstalling Tags"
+adb shell pm install-existing --user 0 com.android.apps.tags
+
 echo "Reinstalling Theme Store"
 adb shell pm install-existing --user 0 com.oplus.themestore
 
 echo "Reinstalling User Experience Program"
 adb shell pm install-existing --user 0 com.oplus.statistics.rom
+
+echo "Reinstalling VDC Service"
+adb shell pm install-existing --user 0 com.oplus.vdc
 
 echo "Reinstalling Video (System)"
 adb shell pm install-existing --user 0 com.coloros.video
