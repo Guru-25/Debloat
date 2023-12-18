@@ -22,5 +22,8 @@ adb shell pm install-existing --user 0 com.oplus.sau
 adb shell pm install-existing --user 0 com.opos.cs
 adb shell pm install-existing --user 0 com.oppoex.afterservice
 adb shell pm install-existing --user 0 com.qti.snapdragon.qdcm_ff
+adb shell pm install-existing --user 0 com.google.android.dialer
+adb shell pm install-existing --user 0 com.realme.securitycheck
+adb shell pm install-existing --user 0 com.qti.xdivert
 
 set /p exitkey= "Press any key to continue..."
