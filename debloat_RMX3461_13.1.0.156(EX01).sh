@@ -12,6 +12,9 @@ adb shell pm uninstall -k --user 0 com.rongcard.eidapi
 echo "Uninstalling aidlserverdemo"
 adb shell pm uninstall -k --user 0 com.tencent.soter.soterserver
 
+echo "Uninstalling Always-On-Display"
+adb shell pm uninstall -k --user 0 com.oplus.aod
+
 echo "Uninstalling Android Accessibility Suite"
 adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
 
@@ -21,13 +24,13 @@ adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
 echo "Uninstalling Android S Easter Egg"
 adb shell pm uninstall -k --user 0 com.android.egg
 
+echo "Uninstalling Android Shared Library"
+adb shell pm uninstall -k --user 0 com.google.android.ext.shared
+
 echo "Uninstalling Android System Intelligence"
 adb shell pm uninstall -k --user 0 com.google.android.as
 
-echo "Uninstalling Aod"
-adb shell pm uninstall -k --user 0 com.oplus.aod
-
-echo "Uninstalling App cloner"
+echo "Uninstalling App Cloner"
 adb shell pm uninstall -k --user 0 com.oplus.multiapp
 
 echo "Uninstalling APP Enhancement Services"
@@ -66,29 +69,47 @@ adb shell pm uninstall -k --user 0 com.android.providers.calendar
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
 
+echo "Uninstalling Canvas"
+adb shell pm uninstall -k --user 0 com.oplus.portrait
+
 echo "Uninstalling Carrier Location Services"
 adb shell pm uninstall -k --user 0 com.oplus.locationproxy
+
+echo "Uninstalling CarrierDefaultApp"
+adb shell pm uninstall -k --user 0 com.android.carrierdefaultapp
 
 echo "Uninstalling Chrome"
 adb shell pm uninstall -k --user 0 com.android.chrome
 
+echo "Uninstalling com.android.cts.ctsshim"
+adb shell pm uninstall -k --user 0 com.android.cts.ctsshim
+
+echo "Uninstalling com.android.ons"
+adb shell pm uninstall -k --user 0 com.android.ons
+
 echo "Uninstalling com.android.providers.partnerbookmarks"
 adb shell pm uninstall -k --user 0 com.android.providers.partnerbookmarks
+
+echo "Uninstalling com.android.sharedstoragebackup"
+adb shell pm uninstall -k --user 0 com.android.sharedstoragebackup
 
 echo "Uninstalling com.android.systemui.plugin.globalactions.wallet"
 adb shell pm uninstall -k --user 0 com.android.systemui.plugin.globalactions.wallet
 
+echo "Uninstalling com.android.wallpaperbackup"
+adb shell pm uninstall -k --user 0 com.android.wallpaperbackup
+
 echo "Uninstalling com.oplus.ocloud"
 adb shell pm uninstall -k --user 0 com.oplus.ocloud
-
-echo "Uninstalling com.oplus.subsys.SubsystemApplication"
-adb shell pm uninstall -k --user 0 com.oplus.subsys
 
 echo "Uninstalling com.qualcomm.atfwd"
 adb shell pm uninstall -k --user 0 com.qualcomm.atfwd
 
 echo "Uninstalling com.qualcomm.embms"
 adb shell pm uninstall -k --user 0 com.qualcomm.embms
+
+echo "Uninstalling com.qualcomm.qti.lpa"
+adb shell pm uninstall -k --user 0 com.qualcomm.qti.lpa
 
 echo "Uninstalling com.qualcomm.qti.uim"
 adb shell pm uninstall -k --user 0 com.qualcomm.qti.uim
@@ -120,11 +141,14 @@ adb shell pm uninstall -k --user 0 com.oplus.crashbox
 echo "Uninstalling CustCoreApp"
 adb shell pm uninstall -k --user 0 com.oplus.customize.coreapp
 
-echo "Uninstalling Data Restore Tool"
+echo "Uninstalling Data restore Tool"
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
-echo "Uninstalling DCF"
+echo "Uninstalling dcf"
 adb shell pm uninstall -k --user 0 com.qti.dcf
+
+echo "Uninstalling Default Print Service"
+adb shell pm uninstall -k --user 0 com.android.bips
 
 echo "Uninstalling Diagnostic Tool"
 adb shell pm uninstall -k --user 0 com.oplus.postmanservice
@@ -184,10 +208,10 @@ echo "Uninstalling Google"
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 
 echo "Uninstalling Google Assistant"
-adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
+adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.xgoogle
 
 echo "Uninstalling Google Assistant"
-adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.xgoogle
+adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
 
 echo "Uninstalling Google Location History"
 adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
@@ -222,7 +246,7 @@ adb shell pm uninstall -k --user 0 com.oplus.interconnectcollectkit
 echo "Uninstalling Internet"
 adb shell pm uninstall -k --user 0 com.heytap.browser
 
-echo "Uninstalling Keep Notes"
+echo "Uninstalling Keep notes"
 adb shell pm uninstall -k --user 0 com.google.android.keep
 
 echo "Uninstalling Kid Space"
@@ -230,6 +254,9 @@ adb shell pm uninstall -k --user 0 com.coloros.childrenspace
 
 echo "Uninstalling Lens"
 adb shell pm uninstall -k --user 0 com.google.ar.lens
+
+echo "Uninstalling Live wallpaper selector"
+adb shell pm uninstall -k --user 0 com.android.wallpaper.livepicker
 
 echo "Uninstalling LocationServices"
 adb shell pm uninstall -k --user 0 com.qualcomm.location
@@ -267,11 +294,11 @@ adb shell pm uninstall -k --user 0 com.coloros.filemanager
 echo "Uninstalling My realme"
 adb shell pm uninstall -k --user 0 com.heytap.usercenter
 
+echo "Uninstalling Network services"
+adb shell pm uninstall -k --user 0 com.oplus.nas
+
 echo "Uninstalling NetworkHealthService"
 adb shell pm uninstall -k --user 0 com.oplus.nhs
-
-echo "Uninstalling Network Services"
-adb shell pm uninstall -k --user 0 com.oplus.nas
 
 echo "Uninstalling NFC Service"
 adb shell pm uninstall -k --user 0 com.android.nfc
@@ -303,20 +330,17 @@ adb shell pm uninstall -k --user 0 com.oplus.linker
 echo "Uninstalling ORoaming"
 adb shell pm uninstall -k --user 0 com.redteamobile.roaming
 
+echo "Uninstalling PacProcessor"
+adb shell pm uninstall -k --user 0 com.android.pacprocessor
+
 echo "Uninstalling Payment protection"
 adb shell pm uninstall -k --user 0 com.coloros.securepay
-
-echo "Uninstalling Phone"
-adb shell pm uninstall -k --user 0 com.google.android.dialer
 
 echo "Uninstalling Phone Manager"
 adb shell pm uninstall -k --user 0 com.coloros.phonemanager
 
 echo "Uninstalling Photos"
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
-
-echo "Uninstalling Portrait silhouette"
-adb shell pm uninstall -k --user 0 com.oplus.portrait
 
 echo "Uninstalling Print Service Recommendation Service"
 adb shell pm uninstall -k --user 0 com.google.android.printservice.recommendation
@@ -327,7 +351,7 @@ adb shell pm uninstall -k --user 0 com.oplus.encryption
 echo "Uninstalling QualityProtect"
 adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
 
-echo "Uninstalling Quick device connect"
+echo "Uninstalling Quick Connect"
 adb shell pm uninstall -k --user 0 com.heytap.accessory
 
 echo "Uninstalling Recorder"
@@ -341,9 +365,6 @@ adb shell pm uninstall -k --user 0 com.oplus.cast
 
 echo "Uninstalling Secure Keyboard"
 adb shell pm uninstall -k --user 0 com.oplus.securitykeyboard
-
-echo "Uninstalling SecurityAnalysis"
-adb shell pm uninstall -k --user 0 com.realme.securitycheck
 
 echo "Uninstalling Shelf"
 adb shell pm uninstall -k --user 0 com.coloros.assistantscreen
@@ -363,14 +384,14 @@ adb shell pm uninstall -k --user 0 com.realme.wellbeing
 echo "Uninstalling Smart Sidebar"
 adb shell pm uninstall -k --user 0 com.coloros.smartsidebar
 
-echo "Uninstalling Smart-Divert"
-adb shell pm uninstall -k --user 0 com.qti.xdivert
-
 echo "Uninstalling Speech Services by Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo "Uninstalling StdSP Core"
 adb shell pm uninstall -k --user 0 com.oplus.stdsp
+
+echo "Uninstalling Subsystem Service"
+adb shell pm uninstall -k --user 0 com.oplus.subsys
 
 echo "Uninstalling System Cloner"
 adb shell pm uninstall -k --user 0 com.coloros.systemclone
@@ -381,11 +402,17 @@ adb shell pm uninstall -k --user 0 com.heytap.mcs
 echo "Uninstalling System Tracing"
 adb shell pm uninstall -k --user 0 com.android.traceur
 
+echo "Uninstalling Tags"
+adb shell pm uninstall -k --user 0 com.android.apps.tags
+
 echo "Uninstalling Theme Store"
 adb shell pm uninstall -k --user 0 com.oplus.themestore
 
 echo "Uninstalling User Experience Program"
 adb shell pm uninstall -k --user 0 com.oplus.statistics.rom
+
+echo "Uninstalling VDC Service"
+adb shell pm uninstall -k --user 0 com.oplus.vdc
 
 echo "Uninstalling Video (System)"
 adb shell pm uninstall -k --user 0 com.coloros.video
