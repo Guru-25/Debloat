@@ -7,7 +7,6 @@ adb shell pm install-existing --user 0 com.coloros.gamespace
 adb shell pm install-existing --user 0 com.coloros.providers.downloads.ui
 adb shell pm install-existing --user 0 com.coloros.sau
 adb shell pm install-existing --user 0 com.coloros.translate.engine
-adb shell pm install-existing --user 0 com.daemon.shelper
 adb shell pm install-existing --user 0 com.google.android.accessibility.soundamplifier
 adb shell pm install-existing --user 0 com.google.android.apps.nbu.paisa.user
 adb shell pm install-existing --user 0 com.google.android.configupdater
