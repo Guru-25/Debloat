@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition rebloat script"
 
+echo "Enabling Maps"
+adb shell pm enable --user 0 com.google.android.apps.maps
+
 echo "Enabling realme Share"
 adb shell pm enable --user 0 com.coloros.oshare
 
@@ -264,9 +267,6 @@ adb shell pm install-existing --user 0 com.qualcomm.location
 echo "Reinstalling Lock Screen Magazine"
 adb shell pm install-existing --user 0 com.heytap.pictorial
 
-echo "Reinstalling Maps"
-adb shell pm install-existing --user 0 com.google.android.apps.maps
-
 echo "Reinstalling Market Feedback Agent"
 adb shell pm install-existing --user 0 com.google.android.feedback
 
@@ -372,6 +372,9 @@ adb shell pm install-existing --user 0 com.oplus.securitykeyboard
 echo "Reinstalling Shelf"
 adb shell pm install-existing --user 0 com.coloros.assistantscreen
 
+echo "Reinstalling Shelper"
+adb shell pm install-existing --user 0 com.daemon.shelper
+
 echo "Reinstalling Sim app dialogue"
 adb shell pm install-existing --user 0 com.android.simappdialog
 
@@ -395,6 +398,9 @@ adb shell pm install-existing --user 0 com.oplus.stdsp
 
 echo "Reinstalling Subsystem Service"
 adb shell pm install-existing --user 0 com.oplus.subsys
+
+echo "Reinstalling Switch Access"
+adb shell pm install-existing --user 0 com.google.android.accessibility.switchaccess
 
 echo "Reinstalling System Cloner"
 adb shell pm install-existing --user 0 com.coloros.systemclone
