@@ -24,5 +24,8 @@ adb shell pm install-existing --user 0 com.qti.snapdragon.qdcm_ff
 adb shell pm install-existing --user 0 com.google.android.dialer
 adb shell pm install-existing --user 0 com.realme.securitycheck
 adb shell pm install-existing --user 0 com.qti.xdivert
+adb shell pm install-existing --user 0 com.google.android.apps.messaging
+adb shell pm install-existing --user 0 com.google.android.apps.maps
+adb shell pm install-existing --user 0 com.coloros.soundrecorder
 
 set /p exitkey= "Press any key to continue..."
