@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition debloat script"
 
+echo "Disabling Maps"
+adb shell pm disable-user --user 0 com.google.android.apps.maps
+
 echo "Disabling realme Share"
 adb shell pm disable-user --user 0 com.coloros.oshare
 
@@ -264,9 +267,6 @@ adb shell pm uninstall -k --user 0 com.qualcomm.location
 echo "Uninstalling Lock Screen Magazine"
 adb shell pm uninstall -k --user 0 com.heytap.pictorial
 
-echo "Uninstalling Maps"
-adb shell pm uninstall -k --user 0 com.google.android.apps.maps
-
 echo "Uninstalling Market Feedback Agent"
 adb shell pm uninstall -k --user 0 com.google.android.feedback
 
@@ -372,6 +372,9 @@ adb shell pm uninstall -k --user 0 com.oplus.securitykeyboard
 echo "Uninstalling Shelf"
 adb shell pm uninstall -k --user 0 com.coloros.assistantscreen
 
+echo "Uninstalling Shelper"
+adb shell pm uninstall -k --user 0 com.daemon.shelper
+
 echo "Uninstalling Sim app dialogue"
 adb shell pm uninstall -k --user 0 com.android.simappdialog
 
@@ -395,6 +398,9 @@ adb shell pm uninstall -k --user 0 com.oplus.stdsp
 
 echo "Uninstalling Subsystem Service"
 adb shell pm uninstall -k --user 0 com.oplus.subsys
+
+echo "Uninstalling Switch Access"
+adb shell pm uninstall -k --user 0 com.google.android.accessibility.switchaccess
 
 echo "Uninstalling System Cloner"
 adb shell pm uninstall -k --user 0 com.coloros.systemclone
