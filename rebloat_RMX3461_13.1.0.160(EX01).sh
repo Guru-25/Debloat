@@ -273,9 +273,6 @@ adb shell pm install-existing --user 0 com.google.android.feedback
 echo "Reinstalling MBN Test"
 adb shell pm install-existing --user 0 com.qualcomm.qti.modemtestmode
 
-echo "Reinstalling Messages"
-adb shell pm install-existing --user 0 com.google.android.apps.messaging
-
 echo "Reinstalling Meta App Installer"
 adb shell pm install-existing --user 0 com.facebook.system
 
@@ -357,9 +354,6 @@ adb shell pm install-existing --user 0 com.oplus.qualityprotect
 echo "Reinstalling Quick Connect"
 adb shell pm install-existing --user 0 com.heytap.accessory
 
-echo "Reinstalling Recorder"
-adb shell pm install-existing --user 0 com.coloros.soundrecorder
-
 echo "Reinstalling Recover system apps"
 adb shell pm install-existing --user 0 com.oplus.apprecover
 
@@ -390,7 +384,7 @@ adb shell pm install-existing --user 0 com.realme.wellbeing
 echo "Reinstalling Smart Sidebar"
 adb shell pm install-existing --user 0 com.coloros.smartsidebar
 
-echo "Reinstalling Speech Services by Google"
+echo "Reinstalling Recognition and Synthesis from Google"
 adb shell pm install-existing --user 0 com.google.android.tts
 
 echo "Reinstalling StdSP Core"
