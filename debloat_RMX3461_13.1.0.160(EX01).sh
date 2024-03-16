@@ -273,9 +273,6 @@ adb shell pm uninstall -k --user 0 com.google.android.feedback
 echo "Uninstalling MBN Test"
 adb shell pm uninstall -k --user 0 com.qualcomm.qti.modemtestmode
 
-echo "Uninstalling Messages"
-adb shell pm uninstall -k --user 0 com.google.android.apps.messaging
-
 echo "Uninstalling Meta App Installer"
 adb shell pm uninstall -k --user 0 com.facebook.system
 
@@ -390,7 +387,7 @@ adb shell pm uninstall -k --user 0 com.realme.wellbeing
 echo "Uninstalling Smart Sidebar"
 adb shell pm uninstall -k --user 0 com.coloros.smartsidebar
 
-echo "Uninstalling Speech Services by Google"
+echo "Uninstalling Speech Recognition and Synthesis from Google"
 adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo "Uninstalling StdSP Core"
