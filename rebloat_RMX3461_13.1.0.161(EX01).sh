@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition rebloat script"
 
+echo "Enabling APP Picks"
+adb shell pm enable --user 0 com.heytap.market
+
 echo "Enabling Maps"
 adb shell pm enable --user 0 com.google.android.apps.maps
 
@@ -36,8 +39,11 @@ adb shell pm install-existing --user 0 com.google.android.as
 echo "Reinstalling App Cloner"
 adb shell pm install-existing --user 0 com.oplus.multiapp
 
-echo "Reinstalling APP Enhancement Services"
+echo "Reinstalling App Enhancement Services"
 adb shell pm install-existing --user 0 com.oplus.cosa
+
+echo "Reinstalling AppHub"
+adb shell pm install-existing --user 0 com.applovin.array.apphub.vincere
 
 echo "Reinstalling ARCore"
 adb shell pm install-existing --user 0 com.google.ar.core
@@ -101,6 +107,9 @@ adb shell pm install-existing --user 0 com.android.systemui.plugin.globalactions
 
 echo "Reinstalling com.android.wallpaperbackup"
 adb shell pm install-existing --user 0 com.android.wallpaperbackup
+
+echo "Reinstalling com.heytap.market.overlay"
+adb shell pm install-existing --user 0 com.heytap.market.overlay
 
 echo "Reinstalling com.oplus.ocloud"
 adb shell pm install-existing --user 0 com.oplus.ocloud
@@ -353,6 +362,9 @@ adb shell pm install-existing --user 0 com.oplus.qualityprotect
 
 echo "Reinstalling Quick Connect"
 adb shell pm install-existing --user 0 com.heytap.accessory
+
+echo "Reinstalling Recorder"
+adb shell pm install-existing --user 0 com.coloros.soundrecorder
 
 echo "Reinstalling Recover system apps"
 adb shell pm install-existing --user 0 com.oplus.apprecover
