@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition debloat script"
 
+echo "Disabling APP Picks"
+adb shell pm disable-user --user 0 com.heytap.market
+
 echo "Disabling Maps"
 adb shell pm disable-user --user 0 com.google.android.apps.maps
 
@@ -36,8 +39,11 @@ adb shell pm uninstall -k --user 0 com.google.android.as
 echo "Uninstalling App Cloner"
 adb shell pm uninstall -k --user 0 com.oplus.multiapp
 
-echo "Uninstalling APP Enhancement Services"
+echo "Uninstalling App Enhancement Services"
 adb shell pm uninstall -k --user 0 com.oplus.cosa
+
+echo "Uninstalling AppHub"
+adb shell pm uninstall -k --user 0 com.applovin.array.apphub.vincere
 
 echo "Uninstalling ARCore"
 adb shell pm uninstall -k --user 0 com.google.ar.core
@@ -101,6 +107,9 @@ adb shell pm uninstall -k --user 0 com.android.systemui.plugin.globalactions.wal
 
 echo "Uninstalling com.android.wallpaperbackup"
 adb shell pm uninstall -k --user 0 com.android.wallpaperbackup
+
+echo "Uninstalling com.heytap.market.overlay"
+adb shell pm uninstall -k --user 0 com.heytap.market.overlay
 
 echo "Uninstalling com.oplus.ocloud"
 adb shell pm uninstall -k --user 0 com.oplus.ocloud
@@ -353,6 +362,9 @@ adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
 
 echo "Uninstalling Quick Connect"
 adb shell pm uninstall -k --user 0 com.heytap.accessory
+
+echo "Uninstalling Recorder"
+adb shell pm uninstall -k --user 0 com.coloros.soundrecorder
 
 echo "Uninstalling Recover system apps"
 adb shell pm uninstall -k --user 0 com.oplus.apprecover
