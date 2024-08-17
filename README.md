@@ -23,10 +23,18 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Support the project
 
-Development is financed by individual user contributions, i.e. you donating or becoming a sponsor ❤️.
+Development is financed by individual user contributions, i.e. you becoming a sponsor or donating ❤️.
 
-* Donate on [UPI](https://gururaja.in/donate)
-* [Become a sponsor](https://github.com/sponsors/Guru-25) on GitHub
+- [Become a sponsor](https://github.com/sponsors/Guru-25) on GitHub
+
+  or
+
+  <a href="https://gururaja.in/donate">
+      <img src="https://github.com/TakiShiwa/donate-with-upi/blob/main/Button/SVG/UPI-teal-01.svg" alt="UPI Pay" height="40">
+  </a>
+  
+> [!NOTE]  
+> UPI is only available for Indian users.
 
 ## Get help
 
