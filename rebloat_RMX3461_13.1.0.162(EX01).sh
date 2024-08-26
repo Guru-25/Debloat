@@ -1,10 +1,7 @@
 echo "Running realme 9 5G Speed Edition rebloat script"
 
-echo "Enabling APP Picks"
+echo "Enabling App Market"
 adb shell pm enable --user 0 com.heytap.market
-
-echo "Enabling Maps"
-adb shell pm enable --user 0 com.google.android.apps.maps
 
 echo "Enabling realme Share"
 adb shell pm enable --user 0 com.coloros.oshare
@@ -186,6 +183,9 @@ adb shell pm install-existing --user 0 com.android.email.partnerprovider
 echo "Reinstalling Emergency SOS"
 adb shell pm install-existing --user 0 com.oplus.sos
 
+echo "Reinstalling Engineermode2"
+adb shell pm install-existing --user 0 com.oplus.engineermodeforflipkart
+
 echo "Reinstalling Family Link parental controls"
 adb shell pm install-existing --user 0 com.google.android.gms.supervision
 
@@ -291,6 +291,9 @@ adb shell pm install-existing --user 0 com.facebook.appmanager
 echo "Reinstalling Meta Services"
 adb shell pm install-existing --user 0 com.facebook.services
 
+echo "Reinstalling Metis"
+adb shell pm install-existing --user 0 com.oplus.metis
+
 echo "Reinstalling Music"
 adb shell pm install-existing --user 0 com.heytap.music
 
@@ -299,6 +302,9 @@ adb shell pm install-existing --user 0 com.coloros.filemanager
 
 echo "Reinstalling My realme"
 adb shell pm install-existing --user 0 com.heytap.usercenter
+
+echo "Reinstalling Network Location Service"
+adb sshell pm install-existing --user 0 com.oplus.location
 
 echo "Reinstalling Network services"
 adb shell pm install-existing --user 0 com.oplus.nas

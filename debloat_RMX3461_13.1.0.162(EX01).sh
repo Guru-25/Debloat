@@ -1,10 +1,7 @@
 echo "Running realme 9 5G Speed Edition debloat script"
 
-echo "Disabling APP Picks"
+echo "Disabling App Market"
 adb shell pm disable-user --user 0 com.heytap.market
-
-echo "Disabling Maps"
-adb shell pm disable-user --user 0 com.google.android.apps.maps
 
 echo "Disabling realme Share"
 adb shell pm disable-user --user 0 com.coloros.oshare
@@ -186,6 +183,9 @@ adb shell pm uninstall -k --user 0 com.android.email.partnerprovider
 echo "Uninstalling Emergency SOS"
 adb shell pm uninstall -k --user 0 com.oplus.sos
 
+echo "Uninstalling Engineermode2"
+adb shell pm uninstall -k --user 0 com.oplus.engineermodeforflipkart
+
 echo "Uninstalling Family Link parental controls"
 adb shell pm uninstall -k --user 0 com.google.android.gms.supervision
 
@@ -291,6 +291,9 @@ adb shell pm uninstall -k --user 0 com.facebook.appmanager
 echo "Uninstalling Meta Services"
 adb shell pm uninstall -k --user 0 com.facebook.services
 
+echo "Uninstalling Metis"
+adb shell pm uninstall -k --user 0 com.oplus.metis
+
 echo "Uninstalling Music"
 adb shell pm uninstall -k --user 0 com.heytap.music
 
@@ -299,6 +302,9 @@ adb shell pm uninstall -k --user 0 com.coloros.filemanager
 
 echo "Uninstalling My realme"
 adb shell pm uninstall -k --user 0 com.heytap.usercenter
+
+echo "Uninstalling Network Location Service"
+adb shell pm uninstall -k --user 0 com.oplus.location
 
 echo "Uninstalling Network services"
 adb shell pm uninstall -k --user 0 com.oplus.nas
