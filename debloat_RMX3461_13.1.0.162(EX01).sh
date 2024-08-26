@@ -363,9 +363,6 @@ adb shell pm uninstall -k --user 0 com.oplus.qualityprotect
 echo "Uninstalling Quick Connect"
 adb shell pm uninstall -k --user 0 com.heytap.accessory
 
-echo "Uninstalling Recorder"
-adb shell pm uninstall -k --user 0 com.coloros.soundrecorder
-
 echo "Uninstalling Recover system apps"
 adb shell pm uninstall -k --user 0 com.oplus.apprecover
 

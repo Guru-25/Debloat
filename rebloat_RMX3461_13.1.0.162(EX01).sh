@@ -363,9 +363,6 @@ adb shell pm install-existing --user 0 com.oplus.qualityprotect
 echo "Reinstalling Quick Connect"
 adb shell pm install-existing --user 0 com.heytap.accessory
 
-echo "Reinstalling Recorder"
-adb shell pm install-existing --user 0 com.coloros.soundrecorder
-
 echo "Reinstalling Recover system apps"
 adb shell pm install-existing --user 0 com.oplus.apprecover
 
