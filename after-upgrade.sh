@@ -27,5 +27,6 @@ adb shell pm install-existing --user 0 com.qti.xdivert
 adb shell pm install-existing --user 0 com.google.android.apps.messaging
 adb shell pm install-existing --user 0 com.google.android.apps.maps
 adb shell pm install-existing --user 0 com.coloros.soundrecorder
+adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 
 set /p exitkey= "Press any key to continue..."

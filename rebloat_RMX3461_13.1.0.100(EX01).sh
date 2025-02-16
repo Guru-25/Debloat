@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition rebloat script"
 
+echo "Enabling App Enhancement Services"
+adb shell pm enable --user 0 com.oplus.cosa
+
 echo "Enabling App Market"
 adb shell pm enable --user 0 com.heytap.market
 
@@ -35,9 +38,6 @@ adb shell pm install-existing --user 0 com.google.android.as
 
 echo "Reinstalling App Cloner"
 adb shell pm install-existing --user 0 com.oplus.multiapp
-
-echo "Reinstalling App Enhancement Services"
-adb shell pm install-existing --user 0 com.oplus.cosa
 
 echo "Reinstalling AppHub"
 adb shell pm install-existing --user 0 com.applovin.array.apphub.vincere
@@ -215,9 +215,6 @@ adb shell pm install-existing --user 0 com.oppo.quicksearchbox
 
 echo "Reinstalling Gmail"
 adb shell pm install-existing --user 0 com.google.android.gm
-
-echo "Reinstalling Google"
-adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 
 echo "Reinstalling Google Assistant"
 adb shell pm install-existing --user 0 com.android.hotwordenrollment.xgoogle

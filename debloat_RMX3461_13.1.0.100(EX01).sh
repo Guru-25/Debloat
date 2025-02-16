@@ -1,5 +1,8 @@
 echo "Running realme 9 5G Speed Edition debloat script"
 
+echo "Disabling App Enhancement Services"
+adb shell pm disable-user --user 0 com.oplus.cosa
+
 echo "Disabling App Market"
 adb shell pm disable-user --user 0 com.heytap.market
 
@@ -35,9 +38,6 @@ adb shell pm uninstall -k --user 0 com.google.android.as
 
 echo "Uninstalling App Cloner"
 adb shell pm uninstall -k --user 0 com.oplus.multiapp
-
-echo "Uninstalling App Enhancement Services"
-adb shell pm uninstall -k --user 0 com.oplus.cosa
 
 echo "Uninstalling AppHub"
 adb shell pm uninstall -k --user 0 com.applovin.array.apphub.vincere
@@ -215,9 +215,6 @@ adb shell pm uninstall -k --user 0 com.oppo.quicksearchbox
 
 echo "Uninstalling Gmail"
 adb shell pm uninstall -k --user 0 com.google.android.gm
-
-echo "Uninstalling Google"
-adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 
 echo "Uninstalling Google Assistant"
 adb shell pm uninstall -k --user 0 com.android.hotwordenrollment.xgoogle
