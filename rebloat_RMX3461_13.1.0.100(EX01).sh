@@ -75,7 +75,7 @@ adb shell pm install-existing --user 0 com.android.providers.calendar
 echo "Reinstalling Call Log Backup/Restore"
 adb shell pm install-existing --user 0 com.android.calllogbackup
 
-echo "Reinstalling CameraExtensionProxy"
+echo "Reinstalling CameraExtensionsProxy"
 adb shell pm install-existing --user 0 com.android.cameraextensions
 
 echo "Reinstalling Canvas"
@@ -201,7 +201,7 @@ adb shell pm install-existing --user 0 com.oplus.crashbox
 echo "Reinstalling CustCoreApp"
 adb shell pm install-existing --user 0 com.oplus.customize.coreapp
 
-echo "Reinstalling Data restore Tool"
+echo "Reinstalling Data restore tool"
 adb shell pm install-existing --user 0 com.google.android.apps.restore
 
 echo "Reinstalling dcf"

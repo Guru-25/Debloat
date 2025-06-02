@@ -75,7 +75,7 @@ adb shell pm uninstall -k --user 0 com.android.providers.calendar
 echo "Uninstalling Call Log Backup/Restore"
 adb shell pm uninstall -k --user 0 com.android.calllogbackup
 
-echo "Uninstalling CameraExtensionProxy"
+echo "Uninstalling CameraExtensionsProxy"
 adb shell pm uninstall -k --user 0 com.android.cameraextensions
 
 echo "Uninstalling Canvas"
@@ -201,7 +201,7 @@ adb shell pm uninstall -k --user 0 com.oplus.crashbox
 echo "Uninstalling CustCoreApp"
 adb shell pm uninstall -k --user 0 com.oplus.customize.coreapp
 
-echo "Uninstalling Data restore Tool"
+echo "Uninstalling Data restore tool"
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
 echo "Uninstalling dcf"
