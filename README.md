@@ -4,8 +4,8 @@ Debloat Scripts for realme UI 4.0
 ## Stats
 ```
 Disabled Apps          :    4
-Uninstalled Apps       :  175
-Total Debloated Apps   :  179
+Uninstalled Apps       :  197
+Total Debloated Apps   :  201
 ```
 
 ### NOTE:

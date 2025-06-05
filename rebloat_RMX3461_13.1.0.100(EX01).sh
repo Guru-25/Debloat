@@ -57,11 +57,17 @@ adb shell pm install-existing --user 0 com.google.android.apps.googleassistant
 echo "Reinstalling Assistive Ball"
 adb shell pm install-existing --user 0 com.coloros.floatassistant
 
+echo "Reinstalling atlasService"
+adb shell pm install-existing --user 0 com.oplus.atlas
+
 echo "Reinstalling Basic Daydreams"
 adb shell pm install-existing --user 0 com.android.dreams.basic
 
 echo "Reinstalling Bluetooth MIDI Service"
 adb shell pm install-existing --user 0 com.android.bluetoothmidiservice
+
+echo "Reinstalling Bookmark Provider"
+adb shell pm install-existing --user 0 com.android.bookmarkprovider
 
 echo "Reinstalling BTtestmode"
 adb shell pm install-existing --user 0 com.oplus.bttestmode
@@ -84,6 +90,9 @@ adb shell pm install-existing --user 0 com.oplus.portrait
 echo "Reinstalling Carrier Location Services"
 adb shell pm install-existing --user 0 com.oplus.locationproxy
 
+echo "Reinstalling CarrierDefaultApp"
+adb shell pm install-existing --user 0 com.android.carrierdefaultapp
+
 echo "Reinstalling Chrome"
 adb shell pm install-existing --user 0 com.android.chrome
 
@@ -93,14 +102,23 @@ adb shell pm install-existing --user 0 com.heytap.colorfulengine
 echo "Reinstalling com.android.cellbroadcastreceiver.overlay.common"
 adb shell pm install-existing --user 0 com.android.cellbroadcastreceiver.overlay.common
 
-echo "Reinstalling com.google.android.ondevicepersonalization.services"
+echo "Reinstalling com.android.cts.ctsshim"
+adb shell pm install-existing --user 0 com.android.cts.ctsshim
+
+echo "Reinstalling com.google.android.ondevicepersonalization.services.OnDevicePersonalizationApplication"
 adb shell pm install-existing --user 0 com.google.android.ondevicepersonalization.services
+
+echo "Reinstalling com.android.ons"
+adb shell pm install-existing --user 0 com.android.ons
 
 echo "Reinstalling com.android.providers.partnerbookmarks"
 adb shell pm install-existing --user 0 com.android.providers.partnerbookmarks
 
 echo "Reinstalling com.android.safetycenter.styles.overlay"
 adb shell pm install-existing --user 0 com.android.safetycenter.styles.overlay
+
+echo "Reinstalling com.android.sharedstoragebackup"
+adb shell pm install-existing --user 0 com.android.sharedstoragebackup
 
 echo "Reinstalling com.android.systemui.overlay.common"
 adb shell pm install-existing --user 0 com.android.systemui.overlay.common
@@ -128,6 +146,9 @@ adb shell pm install-existing --user 0 com.android.systemui.overlay.fingerprint.
 
 echo "Reinstalling com.android.systemui.plugin.globalactions.wallet"
 adb shell pm install-existing --user 0 com.android.systemui.plugin.globalactions.wallet
+
+echo "Reinstalling com.android.wallpaperbackup"
+adb shell pm install-existing --user 0 com.android.wallpaperbackup
 
 echo "Reinstalling com.google.android.federatedcompute"
 adb shell pm install-existing --user 0 com.google.android.federatedcompute
@@ -174,6 +195,9 @@ adb shell pm install-existing --user 0 com.qualcomm.qti.devicestatisticsservice
 echo "Reinstalling com.qualcomm.qti.ims"
 adb shell pm install-existing --user 0 com.qualcomm.qti.ims
 
+echo "Reinstalling com.qualcomm.qti.lpa"
+adb shell pm install-existing --user 0 com.qualcomm.qti.lpa
+
 echo "Reinstalling com.qualcomm.qti.remoteSimlockAuth"
 adb shell pm install-existing --user 0 com.qualcomm.qti.remoteSimlockAuth
 
@@ -183,11 +207,20 @@ adb shell pm install-existing --user 0 com.qualcomm.qti.uim
 echo "Reinstalling com.qualcomm.qti.uimGbaApp"
 adb shell pm install-existing --user 0 com.qualcomm.qti.uimGbaApp
 
-echo "Reinstalling com.qualcomm.qti.uimremoteclient"
-adb shell pm install-existing --user 0 com.qualcomm.qti.uimremoteclient
+echo "Reinstalling com.qualcomm.uimremoteclient"
+adb shell pm install-existing --user 0 com.qualcomm.uimremoteclient
 
-echo "Reinstalling com.qualcomm.qti.uimremoteserver"
-adb shell pm install-existing --user 0 com.qualcomm.qti.uimremoteserver
+echo "Reinstalling com.qualcomm.uimremoteserver"
+adb shell pm install-existing --user 0 com.qualcomm.uimremoteserver
+
+echo "Reinstalling com.ses.entitlement.o2"
+adb shell pm install-existing --user 0 com.ses.entitlement.o2
+
+echo "Reinstalling Combine captions"
+adb shell pm install-existing --user 0 com.realme.movieshot
+
+echo "Reinstalling CommercialMidGround"
+adb shell pm install-existing --user 0 com.oplus.commercial
 
 echo "Reinstalling Compass"
 adb shell pm install-existing --user 0 com.coloros.compass2
@@ -233,6 +266,9 @@ adb shell pm install-existing --user 0 com.oplus.eid
 
 echo "Reinstalling EmailPartnerProvider"
 adb shell pm install-existing --user 0 com.android.email.partnerprovider
+
+echo "Reinstalling Emergency SOS"
+adb shell pm install-existing --user 0 com.oplus.sos
 
 echo "Reinstalling EngineerCamera"
 adb shell pm install-existing --user 0 com.oplus.engineercamera
@@ -375,6 +411,9 @@ adb shell pm install-existing --user 0 com.oplus.location
 echo "Reinstalling Network services"
 adb shell pm install-existing --user 0 com.oplus.nas
 
+echo "Reinstalling NetworkHealthService"
+adb shell pm install-existing --user 0 com.oplus.nhs
+
 echo "Reinstalling NFC Service"
 adb shell pm install-existing --user 0 com.android.nfc
 
@@ -401,6 +440,9 @@ adb shell pm install-existing --user 0 com.coloros.ocs.opencapabilityservice
 
 echo "Reinstalling OplusLFEHer"
 adb shell pm install-existing --user 0 com.oplus.lfeh
+
+echo "Reinstalling OplusVirtualComm"
+adb shell pm install-existing --user 0 com.oplus.virtualcomm
 
 echo "Reinstalling OPSynergy"
 adb shell pm install-existing --user 0 com.oplus.linker
@@ -468,6 +510,12 @@ adb shell pm install-existing --user 0 com.coloros.assistantscreen
 echo "Reinstalling Shelper"
 adb shell pm install-existing --user 0 com.daemon.shelper
 
+echo "Reinstalling Sim app dialogue"
+adb shell pm install-existing --user 0 com.android.simappdialog
+
+echo "Reinstalling SIM Toolkit"
+adb shell pm install-existing --user 0 com.android.stk
+
 echo "Reinstalling SimContacts"
 adb shell pm install-existing --user 0 com.qualcomm.qti.simcontacts
 
@@ -480,8 +528,17 @@ adb shell pm install-existing --user 0 com.realme.wellbeing
 echo "Reinstalling Smart Sidebar"
 adb shell pm install-existing --user 0 com.coloros.smartsidebar
 
+echo "Reinstalling Speech Recognition and Synthesis from Google"
+adb shell pm install-existing --user 0 com.google.android.tts
+
 echo "Reinstalling StdSP Core"
 adb shell pm install-existing --user 0 com.oplus.stdsp
+
+echo "Reinstalling Subsystem Service"
+adb shell pm install-existing --user 0 com.oplus.subsys
+
+echo "Reinstalling Support components"
+adb shell pm install-existing --user 0 com.google.mainline.telemetry
 
 echo "Reinstalling Switch Access"
 adb shell pm install-existing --user 0 com.google.android.accessibility.switchaccess
@@ -513,17 +570,26 @@ adb shell pm install-existing --user 0 com.oplus.vdc
 echo "Reinstalling Video (System)"
 adb shell pm install-existing --user 0 com.coloros.video
 
+echo "Reinstalling ViewTalk"
+adb shell pm install-existing --user 0 com.oplus.viewtalk
+
 echo "Reinstalling WAPI certificate"
 adb shell pm install-existing --user 0 com.wapi.wapicertmanage
 
 echo "Reinstalling Weather"
 adb shell pm install-existing --user 0 com.coloros.weather2
 
+echo "Reinstalling Wfd Service"
+adb shell pm install-existing --user 0 com.qualcomm.wfd.service
+
 echo "Reinstalling WifiBackupRestore"
 adb shell pm install-existing --user 0 com.oplus.wifibackuprestore
 
 echo "Reinstalling wifitest"
 adb shell pm install-existing --user 0 com.oplus.wifitest
+
+echo "Reinstalling Wireless Earphones"
+adb shell pm install-existing --user 0 com.oplus.melody
 
 echo "Reinstalling Work Setup"
 adb shell pm install-existing --user 0 com.android.managedprovisioning

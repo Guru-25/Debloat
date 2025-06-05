@@ -29,22 +29,5 @@ adb shell pm install-existing --user 0 com.google.android.apps.maps
 adb shell pm install-existing --user 0 com.coloros.soundrecorder
 adb shell pm install-existing --user 0 com.google.android.googlequicksearchbox
 adb shell pm install-existing --user 0 com.google.android.ext.shared
-adb shell pm install-existing --user 0 com.android.bookmarkprovider
-adb shell pm install-existing --user 0 com.android.carrierdefaultapp
-adb shell pm install-existing --user 0 com.android.cts.ctsshimcom.android.ons
-adb shell pm install-existing --user 0 com.android.sharedstoragebackup
-adb shell pm install-existing --user 0 com.android.simappdialog
-adb shell pm install-existing --user 0 com.android.stk
-adb shell pm install-existing --user 0 com.android.wallpaperbackup
-adb shell pm install-existing --user 0 com.google.android.tts
-adb shell pm install-existing --user 0 com.oplus.atlas
-adb shell pm install-existing --user 0 com.oplus.commercial
-adb shell pm install-existing --user 0 com.oplus.melody
-adb shell pm install-existing --user 0 com.oplus.nhs
-adb shell pm install-existing --user 0 com.oplus.sos
-adb shell pm install-existing --user 0 com.oplus.subsys
-adb shell pm install-existing --user 0 com.qualcomm.qti.lpa
-adb shell pm install-existing --user 0 com.realme.movieshot
-adb shell pm install-existing --user 0 com.ses.entitlement.o2
 
 set /p exitkey= "Press any key to continue..."
